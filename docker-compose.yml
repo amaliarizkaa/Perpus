@@ -45,6 +45,8 @@ services:
       - "3307:3306"
     environment:
       MYSQL_DATABASE: portal-berita-man
+      MYSQL_USER: portal-berita-man
+      MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
