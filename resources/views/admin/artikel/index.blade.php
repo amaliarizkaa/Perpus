@@ -76,7 +76,7 @@
                             <td>{{ $item->slug }}</td>
                             <td>{{ $item->kategori->nama_kategori }}</td>
                             <td>{{ $item->users->name }}</td>
-                            <td><img src="{{ asset('uploads/' . $item->gambar_artikel) }}" width="100"></td>
+                            <td><img src="{{ URL::asset('uploads/' . $item->gambar_artikel) }}" width="100"></td>
                             <td>{{ date('d M Y', strtotime($item->updated_at)) }}</td>
                             <td>{{ $item->views }}</td>
                             <td>
@@ -225,7 +225,7 @@
                     var artikel_id = $(this).attr('data-id');
                     swal({
                             title: "Yakin?",
-                            text: "Kamu akan menghapus data artikel dengan id " + artikel_id + "",
+                            text: "Kamu akan menghapus data artikel ini!",
                             icon: "warning",
                             buttons: true,
                             dangerMode: true,
