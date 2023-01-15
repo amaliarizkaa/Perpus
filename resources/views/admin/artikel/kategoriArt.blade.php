@@ -127,7 +127,7 @@
                     var kategori_id = $(this).attr('data-id');
                     swal({
                             title: "Yakin?",
-                            text: "Kamu akan menghapus data artikel dengan id " + kategori_id + "",
+                            text: "Kamu akan menghapus Kategori Artikel!?",
                             icon: "warning",
                             buttons: true,
                             dangerMode: true,
@@ -135,11 +135,11 @@
                         .then((willDelete) => {
                             if (willDelete) {
                                 window.location = "/kategoriart/delete/" + kategori_id + ""
-                                swal("Data Artikel Berhasil Dihapus!", {
+                                swal("Kategori Artikel Berhasil Dihapus!", {
                                     icon: "success",
                                 });
                             } else {
-                                swal("Data Tidak Jadi Dihapus!");
+                                swal("Kategori Artikel Tidak Jadi Dihapus!");
                             }
                         });
                 });

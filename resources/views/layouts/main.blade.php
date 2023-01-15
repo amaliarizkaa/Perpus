@@ -91,16 +91,16 @@
                     <ul class="m-0 p-0">
                         <li><a class="text-white text-decoration-none" href="https://www.man1yogyakarta.sch.id/">Berita
                                 Sekolah</a></li>
-                        <li><a class="text-white text-decoration-none" href="http://103.247.15.166:8094/">E-Learning</a>
-                        </li>
+                        {{-- <li><a class="text-white text-decoration-none" href="http://103.247.15.166:8094/">E-Learning</a>
+                        </li> --}}
                         <li><a class="text-white text-decoration-none"
                                 href="https://sidimas.man1yogyakarta.sch.id/">SIDIMAS</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-xs-12 pt-3 about-company">
                     <h2></h2>
-                    <p class="pr-5 text-white-50">Perpustakaan MAN 1 Yogyakarta melayani peminjaman buku bagi seluruh
-                        masyarakat lingkungan sekolah.</p>
+                    <p class="pr-5 text-white-30">Perpustakaan Al-Hakim melayani peminjaman buku
+                        bagi seluruh civitas MAN 1 Yogyakarta.</p>
                     <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i
                                 class="fa fa-linkedin-square"></i></a></p>
                 </div>
