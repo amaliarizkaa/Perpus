@@ -96,7 +96,7 @@
                     var admin_id = $(this).attr('data-id');
                     swal({
                             title: "Yakin?",
-                            text: "Kamu akan menghapus data Admin dengan id " + admin_id + "",
+                            text: "Kamu akan menghapus data Admin dengan ini!?",
                             icon: "warning",
                             buttons: true,
                             dangerMode: true,
