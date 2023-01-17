@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Artikel;
 use App\Models\Buku;
-use App\Models\Karyabuku;
+use App\Models\KaryaBuku;
 use App\Models\KaryaTI;
 use App\Models\KaryaTP;
 use App\Models\Klipping;
@@ -18,7 +18,7 @@ class HomeController extends Controller
         $artikel = Artikel::count();
         $buku = Buku::count();
         $views = Artikel::sum('views');
-        $karyabuku = Karyabuku::count();
+        $karyabuku = KaryaBuku::count();
         $karyailmiah = KaryaTI::count();
         $karyapub = KaryaTP::count();
         $klipping = Klipping::count();
