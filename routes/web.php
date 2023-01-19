@@ -32,10 +32,6 @@ use App\Http\Controllers\GenreController;
 //     return view('welcome');
 // });
 
-Route::get('/link', function () {
-    Artisan::call('storage:link');
-});
-
 // Server Side Route
 // Login Route
 Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
