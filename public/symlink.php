@@ -1,6 +1,6 @@
 <?php
 
 symlink(
-    '/home/https://library.man1yogyakarta.sch.id/portal-berita-man/storage/app/public',
-    '/home/https://library.man1yogyakarta.sch.id/public/uploads'
+    '/var/www/html/storage/app/public',
+    '/var/www/html/public/uploads'
 );
