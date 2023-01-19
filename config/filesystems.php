@@ -39,8 +39,8 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => public_path() . '/uploads',
-            'url' => env('http://library.man1yogyakarta.sch.id') . '/storage',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
         ],
