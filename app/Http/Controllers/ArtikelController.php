@@ -30,7 +30,7 @@ class ArtikelController extends Controller
         $data['slug'] = Str::slug($request->judul);
         $data['user_id'] = Auth::id();
         $data['views'] = 0;
-        $data['gambar_artikel'] = $request->file('gambar_artikel')->store('buku');
+        $data['gambar_artikel'] = $request->file('gambar_artikel')->store('artikel');
 
         Artikel::create($data);
 
@@ -57,7 +57,7 @@ class ArtikelController extends Controller
                 'body' => $request->body,
                 'slug' => Str::slug($request->judul),
                 'kategori_id' => $request->kategori_id,
-                'gambar_artikel' => $request->file('gambar_artikel')->store('buku')
+                'gambar_artikel' => $request->file('gambar_artikel')->store('artikel')
             ]);
             return redirect()->back()->with('success', 'Artikel Berhasil Diubah!');
         }
