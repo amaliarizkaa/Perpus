@@ -66,7 +66,10 @@ return array(
     'Laravel\\SerializableClosure\\' => array($vendorDir . '/laravel/serializable-closure/src'),
     'Laravel\\Sanctum\\' => array($vendorDir . '/laravel/sanctum/src'),
     'Laravel\\Sail\\' => array($vendorDir . '/laravel/sail/src'),
+<<<<<<< HEAD
+=======
     'Laravel\\Envoy\\' => array($vendorDir . '/laravel/envoy/src'),
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'JordanMiguel\\LaravelPopular\\' => array($vendorDir . '/jordanmiguel/laravel-popular/src'),
     'Illuminate\\Support\\' => array($vendorDir . '/laravel/framework/src/Illuminate/Macroable', $vendorDir . '/laravel/framework/src/Illuminate/Collections', $vendorDir . '/laravel/framework/src/Illuminate/Conditionable'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),

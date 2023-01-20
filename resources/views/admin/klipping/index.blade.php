@@ -37,7 +37,11 @@
                             <td>{{ $no }}</td>
                             <td>{{ $item->tahun }}</td>
                             <td>{{ $item->users->name }}</td>
+<<<<<<< HEAD
+                            <td><img src="{{ asset('uploads/' . $item->gambar_klipping) }}" width="100"></td>
+=======
                             <td><img src="{{ asset('/uploads/' . $item->gambar_klipping) }}" width="100"></td>
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
                             <td>{{ date('d-M-y', strtotime($item->updated_at)) }}</td>
                             <td>
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#editModal-{{ $item->id }}"
@@ -121,7 +125,11 @@
                                         class="form-control @error('gambar_klipping') is-invalid @enderror mb-3" autofocus>
                                     <label for="gambar_klipping" class="form-label">Gambar Klipping Saat Ini</label>
                                     <br>
+<<<<<<< HEAD
+                                    <img src="{{ asset('uploads/' . $data->gambar_klipping) }}" width="100">
+=======
                                     <img src="{{ URL::asset('uploads/' . $data->gambar_klipping) }}" width="100">
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
                                     <br>
                                 </div>
                                 {{-- <div class="mb-3">
