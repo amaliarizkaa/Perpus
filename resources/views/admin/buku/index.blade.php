@@ -54,7 +54,7 @@
                             <td>{{ $item->kategori_buku->nama_kategori }}</td>
                             <td>{{ $item->subjek }}</td>
                             <td>{{ $item->users->name }}</td>
-                            <td><img src="{{ asset('uploads/' . $item->gambar_buku) }}" width="100"></td>
+                            <td><img src="{{ URL::asset('uploads/' . $item->gambar_buku) }}" width="100"></td>
                             <td>{{ date('d M Y', strtotime($item->updated_at)) }}</td>
                             <td>
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#editModal-{{ $item->id }}"
