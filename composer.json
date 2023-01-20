@@ -16,7 +16,10 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+<<<<<<< HEAD
+=======
         "laravel/envoy": "^2.8",
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",

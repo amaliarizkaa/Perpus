@@ -1260,6 +1260,8 @@
             "install-path": "../jordanmiguel/laravel-popular"
         },
         {
+<<<<<<< HEAD
+=======
             "name": "laravel/envoy",
             "version": "v2.8.6",
             "version_normalized": "2.8.6.0",
@@ -1325,6 +1327,7 @@
             "install-path": "../laravel/envoy"
         },
         {
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
             "name": "laravel/framework",
             "version": "v9.33.0",
             "version_normalized": "9.33.0.0",
@@ -8427,7 +8430,10 @@
         "fakerphp/faker",
         "filp/whoops",
         "hamcrest/hamcrest-php",
+<<<<<<< HEAD
+=======
         "laravel/envoy",
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         "laravel/pint",
         "laravel/sail",
         "mockery/mockery",
