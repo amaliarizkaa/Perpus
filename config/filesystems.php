@@ -39,14 +39,20 @@ return [
 
         'public' => [
             'driver' => 'local',
-<<<<<<< HEAD
-            'root' => storage_path('app/public'),
-=======
             'root' => public_path() . '/uploads',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
             'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
+            'permissions' => [
+                'file' => [
+                    'public' => 0755,
+                    'private' => 0600,
+                ],
+                'dir' => [
+                    'public' => 0755,
+                    'private' => 0700,
+                ],
+            ],
         ],
 
         's3' => [
