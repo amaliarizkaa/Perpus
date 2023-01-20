@@ -35,13 +35,9 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
-<<<<<<< HEAD
-    'App\\Http\\Requests\\StoreBannerRequest' => $baseDir . '/app/Http/Requests/StoreBannerRequest.php',
-=======
     'App\\Http\\Middleware\\incrementCounter' => $baseDir . '/app/Http/Middleware/incrementCounter.php',
     'App\\Http\\Requests\\StoreBannerRequest' => $baseDir . '/app/Http/Requests/StoreBannerRequest.php',
     'App\\Http\\Requests\\StoreCounterRequest' => $baseDir . '/app/Http/Requests/StoreCounterRequest.php',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'App\\Http\\Requests\\StoreKaryaBukuRequest' => $baseDir . '/app/Http/Requests/StoreKaryaBukuRequest.php',
     'App\\Http\\Requests\\StoreKaryaTIRequest' => $baseDir . '/app/Http/Requests/StoreKaryaTIRequest.php',
     'App\\Http\\Requests\\StoreKaryaTPRequest' => $baseDir . '/app/Http/Requests/StoreKaryaTPRequest.php',
@@ -51,10 +47,7 @@ return array(
     'App\\Http\\Requests\\StoreKlippingRequest' => $baseDir . '/app/Http/Requests/StoreKlippingRequest.php',
     'App\\Http\\Requests\\StoreViewRequest' => $baseDir . '/app/Http/Requests/StoreViewRequest.php',
     'App\\Http\\Requests\\UpdateBannerRequest' => $baseDir . '/app/Http/Requests/UpdateBannerRequest.php',
-<<<<<<< HEAD
-=======
     'App\\Http\\Requests\\UpdateCounterRequest' => $baseDir . '/app/Http/Requests/UpdateCounterRequest.php',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'App\\Http\\Requests\\UpdateKaryaBukuRequest' => $baseDir . '/app/Http/Requests/UpdateKaryaBukuRequest.php',
     'App\\Http\\Requests\\UpdateKaryaTIRequest' => $baseDir . '/app/Http/Requests/UpdateKaryaTIRequest.php',
     'App\\Http\\Requests\\UpdateKaryaTPRequest' => $baseDir . '/app/Http/Requests/UpdateKaryaTPRequest.php',
@@ -78,10 +71,7 @@ return array(
     'App\\Policies\\ArtikelPolicy' => $baseDir . '/app/Policies/ArtikelPolicy.php',
     'App\\Policies\\BannerPolicy' => $baseDir . '/app/Policies/BannerPolicy.php',
     'App\\Policies\\BukuPolicy' => $baseDir . '/app/Policies/BukuPolicy.php',
-<<<<<<< HEAD
-=======
     'App\\Policies\\CounterPolicy' => $baseDir . '/app/Policies/CounterPolicy.php',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'App\\Policies\\KaryaBukuPolicy' => $baseDir . '/app/Policies/KaryaBukuPolicy.php',
     'App\\Policies\\KaryaTIPolicy' => $baseDir . '/app/Policies/KaryaTIPolicy.php',
     'App\\Policies\\KaryaTPPolicy' => $baseDir . '/app/Policies/KaryaTPPolicy.php',
@@ -203,10 +193,6 @@ return array(
     'Database\\Factories\\ArtikelFactory' => $baseDir . '/database/factories/ArtikelFactory.php',
     'Database\\Factories\\BannerFactory' => $baseDir . '/database/factories/BannerFactory.php',
     'Database\\Factories\\BukuFactory' => $baseDir . '/database/factories/BukuFactory.php',
-<<<<<<< HEAD
-    'Database\\Factories\\CounterFactory' => $baseDir . '/database/factories/CounterFactory.php',
-=======
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'Database\\Factories\\KaryaBukuFactory' => $baseDir . '/database/factories/KaryaBukuFactory.php',
     'Database\\Factories\\KaryaTIFactory' => $baseDir . '/database/factories/KaryaTIFactory.php',
     'Database\\Factories\\KaryaTPFactory' => $baseDir . '/database/factories/KaryaTPFactory.php',
@@ -216,10 +202,7 @@ return array(
     'Database\\Factories\\KlippingFactory' => $baseDir . '/database/factories/KlippingFactory.php',
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\AdminSeeder' => $baseDir . '/database/seeders/AdminSeeder.php',
-<<<<<<< HEAD
-=======
     'Database\\Seeders\\CounterSeeder' => $baseDir . '/database/seeders/CounterSeeder.php',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
     'Database\\Seeders\\PenulisSeeder' => $baseDir . '/database/seeders/PenulisSeeder.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -2219,8 +2202,6 @@ return array(
     'JordanMiguel\\LaravelPopular\\LaravelPopularServiceProvider' => $vendorDir . '/jordanmiguel/laravel-popular/src/LaravelPopularServiceProvider.php',
     'JordanMiguel\\LaravelPopular\\Models\\Visit' => $vendorDir . '/jordanmiguel/laravel-popular/src/Models/Visit.php',
     'JordanMiguel\\LaravelPopular\\Traits\\Visitable' => $vendorDir . '/jordanmiguel/laravel-popular/src/Traits/Visitable.php',
-<<<<<<< HEAD
-=======
     'Laravel\\Envoy\\Compiler' => $vendorDir . '/laravel/envoy/src/Compiler.php',
     'Laravel\\Envoy\\ConfigurationParser' => $vendorDir . '/laravel/envoy/src/ConfigurationParser.php',
     'Laravel\\Envoy\\Console\\Command' => $vendorDir . '/laravel/envoy/src/Console/Command.php',
@@ -2238,7 +2219,6 @@ return array(
     'Laravel\\Envoy\\Task' => $vendorDir . '/laravel/envoy/src/Task.php',
     'Laravel\\Envoy\\TaskContainer' => $vendorDir . '/laravel/envoy/src/TaskContainer.php',
     'Laravel\\Envoy\\Telegram' => $vendorDir . '/laravel/envoy/src/Telegram.php',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     'Laravel\\Sail\\Console\\InstallCommand' => $vendorDir . '/laravel/sail/src/Console/InstallCommand.php',
     'Laravel\\Sail\\Console\\PublishCommand' => $vendorDir . '/laravel/sail/src/Console/PublishCommand.php',
     'Laravel\\Sail\\SailServiceProvider' => $vendorDir . '/laravel/sail/src/SailServiceProvider.php',

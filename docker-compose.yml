@@ -1,83 +1,56 @@
-<<<<<<< HEAD
-version: '3.9'
-=======
-version: '3'
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
+version: "3"
 services:
- 
-  #PHP Service
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: portal-berita-man.com/php
-    container_name: app
-    restart: unless-stopped
-    tty: true
-    environment:
-      SERVICE_NAME: app
-      SERVICE_TAGS: dev
-    working_dir: /var/www/html/
-    volumes:
-      - ./:/var/www/html/
-      - ./php/laravel.ini:/usr/local/etc/php/conf.d/laravel.ini
-    networks:
-      - app-network
- 
-  #Nginx Service
-  webserver:
-<<<<<<< HEAD
-    image: nginx:alpine
-=======
-    image: nginx:latest
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
-    container_name: webserver
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./:/var/www/html/
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
-    networks:
-      - app-network
- 
-  #MySQL Service
-  db:
-<<<<<<< HEAD
-    image: mysql:8.0.12
-=======
-    image: mysql:latest
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
-    container_name: db
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_DATABASE: portal-berita-man
-      MYSQL_ROOT_PASSWORD: secret
-      SERVICE_TAGS: dev
-      SERVICE_NAME: mysql
-<<<<<<< HEAD
-      volumes:
-      - dbdata:/var/lib/mysql/
-      - ./mysql/my.cnf:/etc/mysql/my.cnf
-=======
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
-    networks:
-      - app-network
- 
+    #PHP Service
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: portal-berita-man.com/php
+        container_name: app
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: app
+            SERVICE_TAGS: dev
+        working_dir: /var/www/html/
+        volumes:
+            - ./:/var/www/html/
+            - ./php/laravel.ini:/usr/local/etc/php/conf.d/laravel.ini
+        networks:
+            - app-network
+
+    #Nginx Service
+    webserver:
+        image: nginx:latest
+        container_name: webserver
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./:/var/www/html/
+            - ./nginx/conf.d/:/etc/nginx/conf.d/
+        networks:
+            - app-network
+
+    #MySQL Service
+    db:
+        image: mysql:latest
+        container_name: db
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: portal-berita-man
+            MYSQL_ROOT_PASSWORD: secret
+            SERVICE_TAGS: dev
+            SERVICE_NAME: mysql
+        networks:
+            - app-network
+
 #Docker Networks
 networks:
-  app-network:
-    driver: bridge
-<<<<<<< HEAD
-
-#Volumes
-volumes:
-  dbdata:
-    driver: local
-=======
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
+    app-network:
+        driver: bridge

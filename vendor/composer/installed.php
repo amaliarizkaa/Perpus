@@ -5,11 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-<<<<<<< HEAD
-        'reference' => '59c201962a73212f7fb6f878ce5bbbf623126a41',
-=======
         'reference' => '6011ff372dd25d8f09f5c464c74953cf590a95f5',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -368,8 +364,6 @@
                 0 => '*',
             ),
         ),
-<<<<<<< HEAD
-=======
         'laravel/envoy' => array(
             'pretty_version' => 'v2.8.6',
             'version' => '2.8.6.0',
@@ -379,7 +373,6 @@
             'reference' => '24d2405dc785649684ccf531fddd2ac1f58ec861',
             'dev_requirement' => true,
         ),
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'laravel/framework' => array(
             'pretty_version' => 'v9.33.0',
             'version' => '9.33.0.0',
@@ -395,11 +388,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-<<<<<<< HEAD
-            'reference' => '59c201962a73212f7fb6f878ce5bbbf623126a41',
-=======
             'reference' => '6011ff372dd25d8f09f5c464c74953cf590a95f5',
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
