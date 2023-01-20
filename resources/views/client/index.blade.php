@@ -29,7 +29,11 @@
 
                                 <a href="{{ url('/artikel/' . $item->slug) }}" class="time-news mt-2 py-3">
                                     {{ $item->users->name }} -
+<<<<<<< HEAD
                                     {{ date('d-M-y', strtotime($item->created_at)) }} </a>
+=======
+                                    {{ date('d M Y', strtotime($item->created_at)) }} </a>
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
                                 <div class="keterangan mt-2">
 
                                     {{ strip_tags(preg_replace('/&#?[a-z0-9]{2,8};/i', '', $item->body)) }}
@@ -62,7 +66,11 @@
                                 <a href="{{ url('/artikel/' . $item->slug) }}" class="text-decoration-none">
                                     <div class="ket-side ">{{ $item->judul }}</div>
                                 </a>
+<<<<<<< HEAD
                                 <div class="time-news pt-1"> {{ date('d-M-y', strtotime($item->created_at)) }} </div>
+=======
+                                <div class="time-news pt-1"> {{ date('d M Y', strtotime($item->created_at)) }} </div>
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
                                 <a href="{{ url('/artikel/' . $item->slug) }}" class="link-side">Lihat</a>
                             </div>
                         </div>
@@ -75,7 +83,11 @@
     @yield('footer')
 
     <!-- Bootstrap core JavaScript
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                                                                                                                             ================================================== -->
+=======
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ================================================== -->
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

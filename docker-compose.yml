@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 version: '3.9'
+=======
+version: '3'
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
 services:
  
   #PHP Service
@@ -22,7 +26,11 @@ services:
  
   #Nginx Service
   webserver:
+<<<<<<< HEAD
     image: nginx:alpine
+=======
+    image: nginx:latest
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     container_name: webserver
     restart: unless-stopped
     tty: true
@@ -37,7 +45,11 @@ services:
  
   #MySQL Service
   db:
+<<<<<<< HEAD
     image: mysql:8.0.12
+=======
+    image: mysql:latest
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     container_name: db
     restart: unless-stopped
     tty: true
@@ -48,9 +60,12 @@ services:
       MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+<<<<<<< HEAD
       volumes:
       - dbdata:/var/lib/mysql/
       - ./mysql/my.cnf:/etc/mysql/my.cnf
+=======
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
     networks:
       - app-network
  
@@ -58,8 +73,11 @@ services:
 networks:
   app-network:
     driver: bridge
+<<<<<<< HEAD
 
 #Volumes
 volumes:
   dbdata:
     driver: local
+=======
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db

@@ -18,6 +18,7 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
+<<<<<<< HEAD
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
@@ -25,13 +26,26 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+=======
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
+        '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+<<<<<<< HEAD
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+=======
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '6b34c85f7b1ad6faa15aa12109e030f2' => __DIR__ . '/..' . '/realrashid/sweet-alert/src/functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
@@ -128,6 +142,10 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
+<<<<<<< HEAD
+=======
+            'Laravel\\Envoy\\' => 14,
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         ),
         'J' => 
         array (
@@ -422,6 +440,13 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+<<<<<<< HEAD
+=======
+        'Laravel\\Envoy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/envoy/src',
+        ),
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'JordanMiguel\\LaravelPopular\\' => 
         array (
             0 => __DIR__ . '/..' . '/jordanmiguel/laravel-popular/src',
@@ -557,7 +582,13 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
         'App\\Http\\Requests\\StoreBannerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreBannerRequest.php',
+=======
+        'App\\Http\\Middleware\\incrementCounter' => __DIR__ . '/../..' . '/app/Http/Middleware/incrementCounter.php',
+        'App\\Http\\Requests\\StoreBannerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreBannerRequest.php',
+        'App\\Http\\Requests\\StoreCounterRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCounterRequest.php',
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'App\\Http\\Requests\\StoreKaryaBukuRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreKaryaBukuRequest.php',
         'App\\Http\\Requests\\StoreKaryaTIRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreKaryaTIRequest.php',
         'App\\Http\\Requests\\StoreKaryaTPRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreKaryaTPRequest.php',
@@ -567,6 +598,10 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'App\\Http\\Requests\\StoreKlippingRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreKlippingRequest.php',
         'App\\Http\\Requests\\StoreViewRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreViewRequest.php',
         'App\\Http\\Requests\\UpdateBannerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateBannerRequest.php',
+<<<<<<< HEAD
+=======
+        'App\\Http\\Requests\\UpdateCounterRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateCounterRequest.php',
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'App\\Http\\Requests\\UpdateKaryaBukuRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateKaryaBukuRequest.php',
         'App\\Http\\Requests\\UpdateKaryaTIRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateKaryaTIRequest.php',
         'App\\Http\\Requests\\UpdateKaryaTPRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateKaryaTPRequest.php',
@@ -590,6 +625,10 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'App\\Policies\\ArtikelPolicy' => __DIR__ . '/../..' . '/app/Policies/ArtikelPolicy.php',
         'App\\Policies\\BannerPolicy' => __DIR__ . '/../..' . '/app/Policies/BannerPolicy.php',
         'App\\Policies\\BukuPolicy' => __DIR__ . '/../..' . '/app/Policies/BukuPolicy.php',
+<<<<<<< HEAD
+=======
+        'App\\Policies\\CounterPolicy' => __DIR__ . '/../..' . '/app/Policies/CounterPolicy.php',
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'App\\Policies\\KaryaBukuPolicy' => __DIR__ . '/../..' . '/app/Policies/KaryaBukuPolicy.php',
         'App\\Policies\\KaryaTIPolicy' => __DIR__ . '/../..' . '/app/Policies/KaryaTIPolicy.php',
         'App\\Policies\\KaryaTPPolicy' => __DIR__ . '/../..' . '/app/Policies/KaryaTPPolicy.php',
@@ -711,7 +750,10 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'Database\\Factories\\ArtikelFactory' => __DIR__ . '/../..' . '/database/factories/ArtikelFactory.php',
         'Database\\Factories\\BannerFactory' => __DIR__ . '/../..' . '/database/factories/BannerFactory.php',
         'Database\\Factories\\BukuFactory' => __DIR__ . '/../..' . '/database/factories/BukuFactory.php',
+<<<<<<< HEAD
         'Database\\Factories\\CounterFactory' => __DIR__ . '/../..' . '/database/factories/CounterFactory.php',
+=======
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'Database\\Factories\\KaryaBukuFactory' => __DIR__ . '/../..' . '/database/factories/KaryaBukuFactory.php',
         'Database\\Factories\\KaryaTIFactory' => __DIR__ . '/../..' . '/database/factories/KaryaTIFactory.php',
         'Database\\Factories\\KaryaTPFactory' => __DIR__ . '/../..' . '/database/factories/KaryaTPFactory.php',
@@ -721,6 +763,10 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'Database\\Factories\\KlippingFactory' => __DIR__ . '/../..' . '/database/factories/KlippingFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\AdminSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminSeeder.php',
+<<<<<<< HEAD
+=======
+        'Database\\Seeders\\CounterSeeder' => __DIR__ . '/../..' . '/database/seeders/CounterSeeder.php',
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\PenulisSeeder' => __DIR__ . '/../..' . '/database/seeders/PenulisSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -2720,6 +2766,26 @@ class ComposerStaticInite27fd5388da2803f0e5204e609308dc5
         'JordanMiguel\\LaravelPopular\\LaravelPopularServiceProvider' => __DIR__ . '/..' . '/jordanmiguel/laravel-popular/src/LaravelPopularServiceProvider.php',
         'JordanMiguel\\LaravelPopular\\Models\\Visit' => __DIR__ . '/..' . '/jordanmiguel/laravel-popular/src/Models/Visit.php',
         'JordanMiguel\\LaravelPopular\\Traits\\Visitable' => __DIR__ . '/..' . '/jordanmiguel/laravel-popular/src/Traits/Visitable.php',
+<<<<<<< HEAD
+=======
+        'Laravel\\Envoy\\Compiler' => __DIR__ . '/..' . '/laravel/envoy/src/Compiler.php',
+        'Laravel\\Envoy\\ConfigurationParser' => __DIR__ . '/..' . '/laravel/envoy/src/ConfigurationParser.php',
+        'Laravel\\Envoy\\Console\\Command' => __DIR__ . '/..' . '/laravel/envoy/src/Console/Command.php',
+        'Laravel\\Envoy\\Console\\InitCommand' => __DIR__ . '/..' . '/laravel/envoy/src/Console/InitCommand.php',
+        'Laravel\\Envoy\\Console\\RunCommand' => __DIR__ . '/..' . '/laravel/envoy/src/Console/RunCommand.php',
+        'Laravel\\Envoy\\Console\\SshCommand' => __DIR__ . '/..' . '/laravel/envoy/src/Console/SshCommand.php',
+        'Laravel\\Envoy\\Console\\TasksCommand' => __DIR__ . '/..' . '/laravel/envoy/src/Console/TasksCommand.php',
+        'Laravel\\Envoy\\Discord' => __DIR__ . '/..' . '/laravel/envoy/src/Discord.php',
+        'Laravel\\Envoy\\MicrosoftTeams' => __DIR__ . '/..' . '/laravel/envoy/src/MicrosoftTeams.php',
+        'Laravel\\Envoy\\ParallelSSH' => __DIR__ . '/..' . '/laravel/envoy/src/ParallelSSH.php',
+        'Laravel\\Envoy\\RemoteProcessor' => __DIR__ . '/..' . '/laravel/envoy/src/RemoteProcessor.php',
+        'Laravel\\Envoy\\SSH' => __DIR__ . '/..' . '/laravel/envoy/src/SSH.php',
+        'Laravel\\Envoy\\SSHConfigFile' => __DIR__ . '/..' . '/laravel/envoy/src/SSHConfigFile.php',
+        'Laravel\\Envoy\\Slack' => __DIR__ . '/..' . '/laravel/envoy/src/Slack.php',
+        'Laravel\\Envoy\\Task' => __DIR__ . '/..' . '/laravel/envoy/src/Task.php',
+        'Laravel\\Envoy\\TaskContainer' => __DIR__ . '/..' . '/laravel/envoy/src/TaskContainer.php',
+        'Laravel\\Envoy\\Telegram' => __DIR__ . '/..' . '/laravel/envoy/src/Telegram.php',
+>>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
