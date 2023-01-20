@@ -2,5 +2,5 @@
 
 symlink(
     '/var/www/html/storage/app/public',
-    '/var/www/html/public/gambar'
+    '/var/www/html/public/uploads'
 );
