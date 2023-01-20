@@ -23,10 +23,7 @@ class ArtikelController extends Controller
         $this->validate($request, [
             'judul' => 'required|max:100',
             'body' => 'required|max:2000',
-<<<<<<< HEAD
-=======
             'gambar_artikel' => 'nullable'
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
         ]);
 
         $data = $request->all();
@@ -50,10 +47,6 @@ class ArtikelController extends Controller
                 'body' => $request->body,
                 'slug' => Str::slug($request->judul),
                 'kategori_id' => $request->kategori_id,
-<<<<<<< HEAD
-                'is_active' => $request->is_active,
-=======
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
             ]);
             return redirect()->back()->with('success', 'Artikel Berhasil Diubah!');
         } else {
@@ -64,10 +57,6 @@ class ArtikelController extends Controller
                 'body' => $request->body,
                 'slug' => Str::slug($request->judul),
                 'kategori_id' => $request->kategori_id,
-<<<<<<< HEAD
-                'is_active' => $request->is_active,
-=======
->>>>>>> 7e422aa440e16a0cfdd1688bf921398fc56f89db
                 'gambar_artikel' => $request->file('gambar_artikel')->store('artikel')
             ]);
             return redirect()->back()->with('success', 'Artikel Berhasil Diubah!');
