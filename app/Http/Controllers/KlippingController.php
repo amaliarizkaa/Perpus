@@ -24,7 +24,7 @@ class KlippingController extends Controller
 
         $data = $request->all();
         $data['user_id'] = Auth::id();
-        $data['gambar_klipping'] = $request->file('gambar_klipping')->store('klipping');
+        $data['gambar_klipping'] = $request->file('gambar_klipping')->store('karya');
 
         Klipping::create($data);
 
@@ -45,7 +45,7 @@ class KlippingController extends Controller
             Storage::delete($klipping->gambar_klipping);
             $klipping->update([
                 'tahun' => $request->tahun,
-                'gambar_klipping' => $request->file('gambar_klipping')->store('klipping')
+                'gambar_klipping' => $request->file('gambar_klipping')->store('karya')
             ]);
             return redirect()->back()->with('success', 'Klipping Berhasil Diubah!');
         }
