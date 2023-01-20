@@ -1,6 +1,6 @@
 <?php
 
 symlink(
-    '/root/portal-berita-man/storage/app/public',
-    '/root/portal-berita-man/public/uploads'
+    '/var/www/html/storage/app/public',
+    '/var/www/html/public/uploads'
 );
