@@ -67,7 +67,11 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/4.0.13/js/froala_editor.pkgd.min.js"></script>
     <script>
-        var editor = new FroalaEditor('#froala');
+        var editor = new FroalaEditor('#froala', {
+
+            attribution: false;
+
+        });
     </script>
     @stack('script')
     {{-- SweetAlert JS --}}
