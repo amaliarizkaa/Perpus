@@ -22,7 +22,7 @@ class KaryaTIController extends Controller
     {
         $this->validate($request, [
             'judul' => 'required|max:200',
-            'callnum' => 'required|max:10',
+            'callnum' => 'required|max:100',
             'penulis' => 'required|max:100',
             'penerbit' => 'required|max:150',
             'subjek' => 'required|max:150',

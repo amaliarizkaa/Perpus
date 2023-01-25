@@ -218,7 +218,7 @@
                                     <textarea id="froala" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" autofocus>{{ $data->deskripsi }}</textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="kategori" class="form-label">Kategori</label>
+                                    <label for="kategori" class="form-label">Jenis Koleksi</label>
                                     <select value="{{ $data->kategori }}" name="kategori_id"
                                         class="form-control @error('kategori_id') is-invalid @enderror">
                                         @foreach ($katbuk as $row)

@@ -182,10 +182,10 @@
                                         class="form-control @error('callnum') is-invalid body @enderror"
                                         value="{{ $data->callnum }}" autofocus required>
                                     <div class="mb-3">
-                                        <label for="judul_karya" class="form-label">Judul Karya</label>
-                                        <input type="text" name="judul_karya" id="judul_karya"
-                                            class="form-control @error('judul_karya') is-invalid body @enderror"
-                                            value="{{ $data->judul_karya }}" autofocus>
+                                        <label for="judul" class="form-label">Judul Karya</label>
+                                        <input type="text" name="judul" id="judul"
+                                            class="form-control @error('judul') is-invalid body @enderror"
+                                            value="{{ $data->judul }}" autofocus>
                                     </div>
                                     <div class="mb-3">
                                         <label for="penulis" class="form-label">Penulis</label>
