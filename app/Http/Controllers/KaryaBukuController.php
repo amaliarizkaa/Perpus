@@ -23,7 +23,7 @@ class KaryaBukuController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'judul' => 'required|max:200',
+            'judul' => 'required|max:2000',
             'callnum' => 'required|max:100',
             'penulis' => 'required|max:100',
             'penerbit' => 'required|max:150',
