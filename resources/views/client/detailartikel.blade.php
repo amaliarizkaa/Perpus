@@ -20,10 +20,11 @@
                     <div class="informasi mx-auto">
                         <div href="single.html" class="time-news mx-auto d-block text-center pb-2 md-3">
 
-                            <ion-icon name="Admin"></ion-icon> {{ $artikel->users->name }}
-                            <ion-icon name="Waktu Upload"></ion-icon>{{ date('d M Y', strtotime($artikel->created_at)) }}
+                            <ion-icon name="person"></ion-icon> {{ $artikel->users->name }}
+                            <ion-icon name="time"></ion-icon>{{ date('d M Y', strtotime($artikel->created_at)) }}
                             {{-- jumlah view artikel --}}
-                            <ion-icon name="Views"></ion-icon>{{ $artikel->views }}
+                            <ion-icon name="eye"></ion-icon>{{ $artikel->views }}
+                            {{--  --}}
                         </div>
                     </div>
 
@@ -80,7 +81,7 @@
     @yield('footer')
 
     <!-- Bootstrap core JavaScript
-                                                                                                                                                                                                                                                                                                    ================================================== -->
+                                                                                                                                                                                                                                                                                        ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
