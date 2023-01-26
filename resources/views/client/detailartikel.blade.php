@@ -3,7 +3,8 @@
 @section('main-sec')
     <div class="container ">
         <br> <br> <br>
-        <a href="/" class="buttonback" > <img class="back-katalog mt-2 " src="{{ URL::asset('images/previous.png') }}"alt=""> </a>
+        <a href="/" class="buttonback"> <img class="back-katalog mt-2 "
+                src="{{ URL::asset('images/previous.png') }}"alt=""> </a>
         <div class="row mx-0">
             <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
                 <div>
@@ -16,22 +17,22 @@
 
                     <h1 class="text-judul-detail mt-4 lh-md">{{ $artikel->judul }}</h1>
 
-                <div class="informasi mx-auto">
-                    <a href="single.html" class="time-news mx-auto d-block text-center pb-2 md-3"> 
-                        
-                        <ion-icon name="person"></ion-icon> {{ $artikel->users->name }} 
-                        <ion-icon name="time"></ion-icon>{{ date('d-M-y', strtotime($artikel->created_at)) }} 
-                        {{-- jumlah view artikel --}}
-                        <ion-icon name="eye"></ion-icon>{{ $artikel->views }}
-                        {{--  --}}
-                    </a>
-                </div>
+                    <div class="informasi mx-auto">
+                        <div href="single.html" class="time-news mx-auto d-block text-center pb-2 md-3">
 
-                        <div class="fh5co_hover_news_img">
-                            <div class="fh5co_news_img  mb-3"><img class="pic-detail mx-auto d-block"
+                            <ion-icon name="person"></ion-icon> {{ $artikel->users->name }}
+                            <ion-icon name="time"></ion-icon>{{ date('d M Y', strtotime($artikel->created_at)) }}
+                            {{-- jumlah view artikel --}}
+                            <ion-icon name="eye"></ion-icon>{{ $artikel->views }}
+                            {{--  --}}
+                        </div>
+                    </div>
+
+                    <div class="fh5co_hover_news_img">
+                        <div class="fh5co_news_img  mb-3"><img class="pic-detail mx-auto d-block"
                                 src="{{ asset('uploads/' . $artikel->gambar_artikel) }}" alt="" /></div>
-                            <div></div>
-                </div>
+                        <div></div>
+                    </div>
 
 
                     <div class="col-md-20 animate-box">
@@ -80,7 +81,7 @@
     @yield('footer')
 
     <!-- Bootstrap core JavaScript
-                                                                                                                                                                                                                                                                    ================================================== -->
+                                                                                                                                                                                                                                                                            ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
