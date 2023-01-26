@@ -22,7 +22,7 @@ class BukuController extends Controller
     {
         $this->validate($request, [
             'callnum' => 'required|max:10',
-            'judul' => 'required|max:100',
+            'judul' => 'required|max:1000',
             'pengarang' => 'required|max:100',
             'penerbit' => 'required|max:150',
             'tahun' => 'required',
