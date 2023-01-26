@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap");
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-
 
 .card {
     position: relative;
@@ -22,8 +20,6 @@
 .card-img {
     width: 100%;
 }
-
-
 
 .image_3 {
     position: relative;
@@ -53,58 +49,41 @@
 
 .image_3:hover .middle {
     opacity: 10;
-    
 }
-
-
-
-
-
-
-
 
 .text-center {
     text-align: center !important;
 }
 
-.buttonback{
+.buttonback {
     padding: 0;
     border: none;
     background: none;
-    
 }
 
-.back-katalog{
+.back-katalog {
     margin-left: -60px;
     border-radius: 5px;
     margin-bottom: -80px;
     max-width: 2%;
-   
 }
-
 
 @media (max-width: 700px) {
-    .back-katalog{
-       
+    .back-katalog {
         border-radius: 5px;
         max-width: 2%;
-       
     }
-    
 }
-
 
 @media (max-width: 700px) {
     .img-fluid {
         max-width: 400px;
         max-height: 550px;
         float: center;
-        
     }
-    
 }
 
-.jumlah{
+.jumlah {
     margin-top: -20px;
 }
 
@@ -112,17 +91,17 @@
     max-width: 400px;
     max-height: 550px;
     float: center;
-    
 }
 
 .judulbuku {
     font-family: "Times New Roman", Times, serif;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: bold;
     text-align: left;
+    line-height: 45px;
 }
 
-.judular{
+.judular {
     font-family: "Times New Roman", Times, serif;
     font-size: 25px;
     font-weight: bold;
@@ -149,12 +128,11 @@
 
 .callnum {
     font-family: "Times New Roman", Times, serif;
-    font-size: 17px;
+    font-size: 24px;
     margin-top: 10px;
     text-align: left;
     font-style: italic;
     color: grey;
-   
 }
 
 .tahun {
@@ -164,19 +142,17 @@
     text-align: left;
     font-style: italic;
     color: grey;
-   
 }
 
-
-.judul-buku{
+.judul-buku {
     font-family: "Times New Roman", Times, serif;
     font-weight: bolder;
     text-decoration: none;
     color: black;
 }
-.penulis-buku{
+
+.penulis-buku {
     font-family: "Times New Roman", Times, serif;
-    
     text-decoration: none;
     color: black;
     padding-bottom: -20px;
@@ -201,8 +177,8 @@
     text-align: center;
 }
 
-h6{
-    color: #df9911;;
+h6 {
+    color: #df9911;
 }
 .kotak {
     width: 200px;
@@ -210,10 +186,10 @@ h6{
     background-color: #152f4f !important;
 }
 
-.cari{
+.cari {
     text-decoration: none;
     font-family: montserrat;
-    color:white;
+    color: white;
     padding: 10px;
     padding-top: 5px;
     padding-right: 20px;
@@ -222,28 +198,19 @@ h6{
     border-radius: 10px;
     border: none;
     background-color: green;
-    
 }
- 
 
-.cari:hover{
-   
-
+.cari:hover {
     background-color: #ffc107;
-   
 }
 
-
-
-.form-controll{
+.form-controll {
     font-family: montserrat;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 5px;
     border-color: lightgrey;
-  
 }
-
 
 h1 {
     font-family: Montserrat;
