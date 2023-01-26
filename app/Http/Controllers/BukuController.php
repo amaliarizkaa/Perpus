@@ -21,7 +21,7 @@ class BukuController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'callnum' => 'required|max:10',
+            'callnum' => 'required|max:100',
             'judul' => 'required|max:1000',
             'pengarang' => 'required|max:100',
             'penerbit' => 'required|max:150',
