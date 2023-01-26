@@ -276,8 +276,9 @@ ion-icon {
 .tatatertib {
     text-align: justify;
     font-family: montserrat;
-    text-indent: 1em;
-    line-height: 170%;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 ul.none-dot {
