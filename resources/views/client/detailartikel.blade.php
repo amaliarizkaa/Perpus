@@ -6,7 +6,7 @@
         <a href="/" class="buttonback"> <img class="back-katalog mt-2 "
                 src="{{ URL::asset('images/previous.png') }}"alt=""> </a>
         <div class="row mx-0">
-            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+            <div class="col-md-8" data-animate-effect="fadeInLeft">
                 <div>
                     <div class="head-news pt-2 pb-1">Berita Perpustakaan </div>
                 </div>
@@ -81,7 +81,7 @@
     @yield('footer')
 
     <!-- Bootstrap core JavaScript
-                                                                                                                                                                                                                                                                            ================================================== -->
+                                                                                                                                                                                                                                                                                ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

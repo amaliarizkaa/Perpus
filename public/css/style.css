@@ -1,31 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* navbar */
 
-
-
-
 @media (max-width: 700px) {
+    .Webnama {
+        position: relative;
+        text-align: center;
+        margin-right: 90px;
+        margin-left: -70px;
+        white-space: pre-line;
+    }
 
-                  .Webnama{
-                    position: relative;
-                    text-align: center;
-                    margin-right: 90px;
-                    margin-left: -70px;
-                  white-space: pre-line; 
-                  }
-
-                .logoman {
-                  margin-top: -15px;
-                  margin-left: -35px;
-                  object-position: center;
-                  width: 80px;
-                  margin-right: 100%;
-                      }
-
-                    }
-
+    .logoman {
+        margin-top: -15px;
+        margin-left: -35px;
+        object-position: center;
+        width: 80px;
+        margin-right: 100%;
+    }
+}
 
 .Webnama {
     position: absolute;
@@ -35,26 +29,22 @@
     font-size: 115%;
     font-weight: 550;
     color: white;
-    
 }
- 
- .nav-link {
-    font-family: poppins ;
-    font-weight: lighter;  
+
+.nav-link {
+    font-family: poppins;
+    font-weight: lighter;
 }
 
 /* dropdown */
-.dropdown-menu{
-  font-family: poppins ;
-  font-weight: lighter;  
+.dropdown-menu {
+    font-family: poppins;
+    font-weight: lighter;
 }
 
-
 .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; 
- 
-
+    display: block;
+    margin-top: 0;
 }
 /* end */
 
@@ -64,134 +54,125 @@
     padding: 20px 30px;
     background-color: #47c363;
     position: relative;
-  }
-  .navbar .nav-header {
+}
+.navbar .nav-header {
     display: inline;
-  }
-  .navbar .nav-header {
-    
+}
+.navbar .nav-header {
     margin-top: -7px;
-  }
-  .navbar .nav-links {
+}
+.navbar .nav-links {
     display: inline;
     float: right;
-    
-  }
-  .navbar .nav-links a {
-   
+}
+.navbar .nav-links a {
     text-decoration: none;
     font-weight: 550;
     color: white;
-  }
-  /* Hover effects */
-  .navbar .nav-links a:hover {
+}
+/* Hover effects */
+.navbar .nav-links a:hover {
     font-weight: bolder;
-  }
-  
-  /* responsive navbar toggle button */
-  .navbar #nav-check,
-  .navbar .nav-btn {
+}
+
+/* responsive navbar toggle button */
+.navbar #nav-check,
+.navbar .nav-btn {
     display: none;
-  }
-  
-  @media (max-width: 700px) {
+}
+
+@media (max-width: 700px) {
     .navbar .nav-btn {
-      display: inline-block;
-      position: absolute;
-      top: 0px;
-      right: 0px;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
     }
     .navbar .nav-btn label {
-      display: inline-block;
-      width: 65px;
-      height: 70px;
-      padding: 25px;
+        display: inline-block;
+        width: 65px;
+        height: 70px;
+        padding: 25px;
     }
     .navbar .nav-btn label span {
-      display: block;
-      height: 10px;
-      width: 25px;
-      border-top: 3px solid #eee;
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid #eee;
     }
     .navbar .nav-btn label:hover,
     .navbar #nav-check:checked ~ .nav-btn label {
-      background-color: #47c363;
+        background-color: #47c363;
     }
     .navbar .nav-links {
-        
         font-size: 90%;
-      position: absolute;
-      display: block;
-      text-align: left;
-      width: 50%;
-      background-color: #47c363;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 70px;
-      right: 0px;
+        position: absolute;
+        display: block;
+        text-align: left;
+        width: 50%;
+        background-color: #47c363;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
     }
     .navbar .nav-links a {
-      display: block;
+        display: block;
     }
-  
+
     /* when nav toggle button not checked */
     .navbar #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
+        height: 0px;
     }
-  
+
     /* when nav toggle button is checked */
     .navbar #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 70px);
-      overflow-y: auto;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 }
 
-
-
-
-
 .head-news {
-text-decoration: none;
+    text-decoration: none;
 
-font-weight: bold;
-font-size: 150%;
+    font-weight: bold;
+    font-size: 150%;
 }
 
-.img-fluid-post{
-max-width: 100%;
-border-radius: 5px;
+.img-fluid-post {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
-.pic-detail{
+.pic-detail {
     max-width: 85%;
-border-radius: 5px;
-
+    border-radius: 5px;
 }
 /* judul artikel */
-.text-judul{
+.text-judul {
     font-family: montserrat;
     text-decoration: none;
-    font-size:180%;
+    /* font-size: 180%; */
+    font-size: 18px;
     font-weight: bold;
     color: green;
     letter-spacing: 0px;
     line-height: 25px;
 }
 
-.text-judul:hover{
-  color: #ffcc01;
-  transition: all 0.2s ease-in;
+.text-judul:hover {
+    color: #ffcc01;
+    transition: all 0.2s ease-in;
 }
 
-.text-judul-detail{
+.text-judul-detail {
     font-family: montserrat;
-   
     text-decoration: none;
-    font-size:180%;
+    font-size: 180%;
     font-weight: bold;
     color: black;
     letter-spacing: 0px;
-    line-height: 25px;
+    line-height: 40px;
 }
 
 .time-news {
@@ -199,148 +180,135 @@ border-radius: 5px;
     font-family: poppins;
     text-decoration: none;
     color: grey;
-    font-size: 85%
-    
+    font-size: 85%;
 }
 
 ion-icon {
-  padding-right: 3px;
-  padding-left: 8px;
+    padding-right: 3px;
+    padding-left: 8px;
 }
-.time-news:hover{
-  color: green;
+.time-news:hover {
+    color: green;
 }
 
-.head-news{
-    
+.head-news {
     font-size: 180%;
     color: green;
     border-bottom: 5px solid #ffcc01;
     padding-right: 30px;
 }
 
-.head-side{
+.head-side {
     font-weight: bold;
-   padding-top: 50px;
-   color: green;
-   border-bottom: 5px solid #ffcc01;
+    padding-top: 50px;
+    color: green;
+    border-bottom: 5px solid #ffcc01;
     padding-right: 30px;
     border-width: 5px;
 }
 
-
 /* selengkapnya button */
-.btn-detail{
+.btn-detail {
     text-decoration: none;
     color: grey;
-    
 }
 
 .btn-detail:hover {
-  color: white;
-  transition: opacity 1s ease-in-out;
+    color: white;
+    transition: opacity 1s ease-in-out;
 }
 /* end */
 
-
-.img-side-news{
+.img-side-news {
     max-width: 100%;
-   
 }
 
-
-
-.keterangan-detail{
-
+.keterangan-detail {
     font-family: montserrat;
-    font-size: 85%;
+    font-size: 14px;
+    line-height: 30px;
 }
 
-.keterangan{
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+.keterangan {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: montserrat;
-    font-size: 95%;
+    font-size: 14px;
 }
 
-.ket-side{font-family: montserrat;
+.ket-side {
+    font-family: montserrat;
     text-decoration: none;
     font-size: 80%;
-     line-height: 17px;
+    line-height: 17px;
     color: black;
 }
 
-.link-side{
+.link-side {
     font-family: montserrat;
     text-decoration: underline grey;
     font-size: 80%;
-     line-height: 17px;
+    line-height: 17px;
     color: grey;
     font-weight: bolder;
-   
 }
 
-.link-side:hover{
-  color: green;
+.link-side:hover {
+    color: green;
 }
-
-
 
 /* Profil */
-.profil{
-text-align: justify;
-  font-family: montserrat;
-  font-size: 85%;
-  text-indent: 3em;
+.profil {
+    text-align: justify;
+    font-family: montserrat;
+    font-size: 14px;
+    line-height: 25px;
 }
 
-.profil-list{
-  text-align: justify;
-  font-family: montserrat;
-  font-size: 85%;
-  line-height: 170%;
+.profil-list {
+    text-align: justify;
+    font-family: montserrat;
+    font-size: 14px;
+    line-height: 170%;
 }
 
-.tatatertib{
-
+.tatatertib {
     text-align: justify;
     font-family: montserrat;
     text-indent: 1em;
     line-height: 170%;
-  
+}
+
+ul.none-dot {
+    list-style-type: none;
 }
 
 .kubuku {
-  border: solid;
-  border-radius: 5px;
-  padding: 3px;
-  text-decoration: none;
-  color: green;
+    border: solid;
+    border-radius: 5px;
+    padding: 3px;
+    text-decoration: none;
+    color: green;
 }
-.kubuku:hover{
-  color: #ffcc01;
-  padding: 4px;
-  transition:all 0.1s ease-in;
+.kubuku:hover {
+    color: #ffcc01;
+    padding: 4px;
+    transition: all 0.1s ease-in;
 }
 
-
-.text-judul-profil{
-  font-family: montserrat;
- 
-  text-decoration: none;
-  font-size:140%;
-  font-weight: bold;
-  color: black;
-  letter-spacing: 0px;
-  line-height: 25px;
+.text-judul-profil {
+    font-family: montserrat;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 140%;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0px;
+    line-height: 25px;
 }
 /* end */
 
-
-
-
-
-.footer-box{
-  padding-top: -850px;
+.footer-box {
+    padding-top: -850px;
 }
-
-
