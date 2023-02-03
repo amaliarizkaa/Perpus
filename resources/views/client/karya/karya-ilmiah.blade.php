@@ -56,7 +56,7 @@
                                 </a>
                                 <!-- Product details-->
                                 <div class="card-body pt-"3>
-                                    <a style="text-decoration:none" href="{{ url('/karya-buku/' . $item->slug) }}">
+                                    <a style="text-decoration:none" href="{{ url('/karya-ilmiah/' . $item->slug) }}">
                                         <div class="text-center">
                                             <!-- Product name-->
                                             <h5 class="judul-buku  fw-bolder">{{ $item->judul }}</h5>
