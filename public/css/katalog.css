@@ -149,6 +149,9 @@
     font-weight: bolder;
     text-decoration: none;
     color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .penulis-buku {
