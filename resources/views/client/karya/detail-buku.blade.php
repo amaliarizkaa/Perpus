@@ -14,17 +14,19 @@
                         <p class="callnum text-center">{{ $karyabuku->callnum }}</p>
                     </div>
                     <div class="col-lg-6">
-                     
-                        <h1 class="penerbit "> {{ $karyabuku->subjek }} | Penerbit : {{ $karyabuku->penerbit }}</h1>
                         <h1 class="judulbuku">{{ $karyabuku->judul }}</h1>
-                        <h1 class="kecil">{{ $karyabuku->penulis }} - {{ $karyabuku->tahun }} | {{ $karyabuku->halaman }}</h1>
+                        <h1 class="penerbit "> {{ $karyabuku->subjek }} | Penerbit : {{ $karyabuku->penerbit }}</h1>
+                        <h1 class="kecil">{{ $karyabuku->penulis }} - {{ $karyabuku->tahun }} | {{ $karyabuku->halaman }}
+                        </h1>
                         <h6 class="">
                             {{ $karyabuku->kategori_penulis->nama_kategori }}
                         </h6>
                         <p class="border-left border-primary">
-                        <p>Deskripsi Singkat : <br>{{ strip_tags(preg_replace('/&#?[a-z0-9]{2,8};/i', '', $karyabuku->deskripsi)) }}</p>
+                        <p>
+                            <br>{{ strip_tags(preg_replace('/&#?[a-z0-9]{2,8};/i', '', $karyabuku->deskripsi)) }}
                         </p>
-                     
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -32,4 +34,3 @@
     </section>
     @yield('footer')
 @endsection
-

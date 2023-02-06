@@ -13,10 +13,9 @@
                             alt="">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="penerbit ">Penerbit : {{ $karyapub->penerbit }} |  {{ $karyapub->edisi }}</h1>
                         <h1 class="judulbuku"> {{ $karyapub->judul_terbit }} / </h1>
                         <h3 class="judular">{{ $karyapub->judul }}</h3>
-
+                        <h1 class="penerbit ">Penerbit : {{ $karyapub->penerbit }} | {{ $karyapub->edisi }}</h1>
                         <h1 class="kecil">Ditulis Oleh : {{ $karyapub->penulis }} | {{ $karyapub->halaman }}</h1>
                         <h6 class="align-text-top  py-1 ">
                             {{ $karyapub->kategori_penulis->nama_kategori }}
@@ -24,7 +23,7 @@
                         <p class="border-left border-primary">
                         <p>{{ strip_tags(preg_replace('/&#?[a-z0-9]{2,8};/i', '', $karyapub->deskripsi)) }}</p>
                         </p>
-                      
+
                     </div>
                 </div>
             </div>
