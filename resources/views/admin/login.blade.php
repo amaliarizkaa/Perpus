@@ -65,9 +65,6 @@
                                 </button>
                             </div>
                         @endif
-                        {{-- <div class="w-100 text-center mt-5 text">
-							<a href="register-undo">Daftar Admin</a>
-						</div> --}}
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@ Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/dashboard', [HomeController::class, 'index'])->middleware('auth');
 
 // Register Route
-Route::get('/register-undo', [RegisterController::class, 'index']);
+Route::get('/register-undo', [RegisterController::class, 'index'])->middleware('auth');
 Route::post('/register-undo/store', [RegisterController::class, 'store']);
 
 // Admin Route
