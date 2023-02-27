@@ -10642,7 +10642,7 @@ body {
     font-size: 14px;
     line-height: 1.8;
     font-weight: normal;
-    background: #47c363;
+    background: #2a6f3b;
     color: gray;
 }
 
@@ -10650,7 +10650,7 @@ a {
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    color: #47c363;
+    color: #2a6f3b;
 }
 a:hover,
 a:focus {
@@ -10658,7 +10658,7 @@ a:focus {
     outline: none !important;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #47c363;
+    color: #2a6f3b;
 }
 
 h1,
@@ -10773,7 +10773,7 @@ h5,
     box-shadow: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid #47c363;
+    border-bottom: 1px solid #2a6f3b;
     padding-left: 30px;
     padding-right: 0;
     letter-spacing: 1px;
@@ -10810,7 +10810,7 @@ h5,
     -webkit-box-shadow: none;
     box-shadow: none;
     background: rgba(0, 0, 0, 0.07);
-    border-color: #47c363;
+    border-color: #2a6f3b;
 }
 
 .text a {
@@ -10880,25 +10880,25 @@ h5,
     outline: none;
 }
 .btn.btn-primary {
-    background: #47c363 !important;
-    border: 1px solid #47c363 !important;
+    background: #2a6f3b !important;
+    border: 1px solid #2a6f3b !important;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff !important;
 }
 .btn.btn-primary:hover {
-    border: 1px solid #47c363;
+    border: 1px solid #2a6f3b;
     background: transparent;
-    color: #47c363;
+    color: #2a6f3b;
 }
 .btn.btn-primary.btn-outline-primary {
-    border: 1px solid #47c363;
+    border: 1px solid #2a6f3b;
     background: transparent;
-    color: #47c363;
+    color: #2a6f3b;
 }
 .btn.btn-primary.btn-outline-primary:hover {
     border: 1px solid transparent;
-    background: #47c363;
+    background: #2a6f3b;
     color: #fff;
 }
