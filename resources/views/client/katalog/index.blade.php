@@ -9,10 +9,10 @@
             <div class="container">
                 <div class="row m-2">
                     <form action="{{ url('/katalog/search') }}" method="GET" class="col-auto">
-                        <div class="input-group ">
+                        <div class="input-group">
                             <button class="cari ms-2" href="">Cari</button>
-                            <input type="search" value="" class="form-control rounded" placeholder="cari koleksi"
-                                name="search" aria-describedby="search-addon" />
+                            <input type="search" value="" class="form-control rounded"
+                                placeholder="Cari Judul atau Penulis..." name="search" aria-describedby="search-addon" />
                         </div>
                     </form>
                 </div>
