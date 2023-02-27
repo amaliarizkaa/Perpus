@@ -12,8 +12,7 @@
                         <div class="input-group ">
                             <button class="cari ms-2" href="">Cari</button>
                             <input type="search" value="" class="form-control rounded"
-                                placeholder="Cari judul atau penulis karya" name="search"
-                                aria-describedby="search-addon" />
+                                placeholder="Cari Judul atau Penulis..." name="search" aria-describedby="search-addon" />
                         </div>
 
                     </form>
