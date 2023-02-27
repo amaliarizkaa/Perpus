@@ -28,7 +28,7 @@ class KaryaTPController extends Controller
             'penerbit' => 'required|max:150',
             'halaman' => 'nullable',
             'kategori_id' => 'required',
-            'gambar_buku' => 'nullable',
+            'gambar_buku' => 'required',
         ]);
 
         $data = $request->all();

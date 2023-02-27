@@ -30,7 +30,7 @@ class BukuController extends Controller
             'kategori_id' => 'nullable',
             'subjek' => 'nullable',
             'deskripsi' => 'required|max:3000',
-            'gambar_buku' => 'nullable',
+            'gambar_buku' => 'required',
         ]);
 
         $data = $request->all();

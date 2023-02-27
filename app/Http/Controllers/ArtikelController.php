@@ -23,7 +23,7 @@ class ArtikelController extends Controller
         $this->validate($request, [
             'judul' => 'required|max:1000',
             'body' => 'required',
-            'gambar_artikel' => 'nullable'
+            'gambar_artikel' => 'required',
         ]);
 
         $data = $request->all();

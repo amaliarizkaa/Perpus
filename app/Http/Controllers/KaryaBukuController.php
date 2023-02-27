@@ -33,7 +33,7 @@ class KaryaBukuController extends Controller
             'halaman' => 'nullable',
             'kategori_id' => 'required',
             'deskripsi' => 'required|max:3000',
-            'gambar_buku' => 'nullable',
+            'gambar_buku' => 'required',
         ]);
 
         $data = $request->all();

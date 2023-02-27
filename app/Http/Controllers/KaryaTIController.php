@@ -31,7 +31,7 @@ class KaryaTIController extends Controller
             'halaman' => 'nullable',
             'kategori_id' => 'required',
             'deskripsi' => 'required|max:3000',
-            'gambar_karya' => 'nullable',
+            'gambar_karya' => 'required',
         ]);
 
         $data = $request->all();
