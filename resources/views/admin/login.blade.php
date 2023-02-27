@@ -20,6 +20,9 @@
 
     <link rel="stylesheet" href="{{ url('css/login.css?v=') . time() }}">
 
+    <!-- Logo Title -->
+    <link rel="icon" href="{{ URL::asset('images/1.png') }}" type="image/x-icon">
+    <title>Login Perpus</title>
 </head>
 
 <body>

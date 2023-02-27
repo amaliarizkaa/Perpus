@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="css/login.css">
 
+    <!-- Logo Title -->
+    <link rel="icon" href="{{ URL::asset('images/1.png') }}" type="image/x-icon">
+    <title>Register Perpus App</title>
+
 </head>
 
 <body>
