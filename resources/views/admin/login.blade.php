@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="{{ url('css/login.css?v=') . time() }}">
 
 </head>
 
