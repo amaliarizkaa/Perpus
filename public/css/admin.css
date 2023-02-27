@@ -12,7 +12,7 @@
     left: 0;
     height: 100%;
     width: 260px;
-    background: #47c363;
+    background: #2a6f3b;
     z-index: 100;
     transition: all 0.5s ease;
 }
@@ -62,7 +62,7 @@
     transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover {
-    background: #47c363;
+    background: #2a6f3b;
     border-radius: 5px;
     padding-left: 5px;
 }
@@ -109,7 +109,7 @@
     padding: 6px 6px 14px 80px;
     margin-top: -10px;
     border-radius: 5px;
-    background: #0f6222;
+    background: #2a6f3b;
     display: none;
 }
 .sidebar .nav-links li.showMenu .sub-menu {
@@ -170,7 +170,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #47c363;
+    background: #2a6f3b;
     padding: 12px 0;
     transition: all 0.5s ease;
 }
@@ -190,7 +190,7 @@
     object-fit: cover;
     border-radius: 16px;
     margin: 0 14px 0 12px;
-    background: #47c363;
+    background: #2a6f3b;
     transition: all 0.5s ease;
 }
 .sidebar.close .profile-details img {
@@ -230,11 +230,11 @@
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text {
-    color: #47c363;
+    color: #2a6f3b;
     font-size: 35px;
 }
 
-.text{
+.text {
     padding-left: 35px;
 }
 .home-section .home-content .bx-menu {
@@ -269,8 +269,8 @@
 /* Main Content Admin */
 /* Card Section */
 :root {
-    --pr-color: #47c363;
-    --sc-color: #95e7a8;
+    --pr-color: #2a6f3b;
+    --sc-color: #2a6f3b;
 }
 
 #layanan {
@@ -341,7 +341,7 @@ h2 {
     transition: all 0.2s ease-in;
 }
 
-.card-bawah{
+.card-bawah {
     width: 100%;
     border-radius: 10px;
     background-color: white;
@@ -349,9 +349,6 @@ h2 {
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in;
 }
-
-
-
 
 /* Kondisi ketika hover */
 
@@ -385,7 +382,6 @@ h2 {
     font-size: 20px;
     transition: all 0.2s ease-in;
 }
-
 
 .card {
     width: 100%;
