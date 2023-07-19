@@ -34,7 +34,7 @@ use App\Http\Controllers\GenreController;
 
 // Server Side Route
 // Login Route
-Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('auth');
+Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
