@@ -70,8 +70,7 @@
                             </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn-tambah mx-4 flex text-center">Simpan</button>
                     </div>
                     </form>
                 </div>
@@ -100,8 +99,7 @@
                                 </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn-tambah mx-4 flex text-center">Simpan</button>
                         </div>
                         </form>
                     </div>

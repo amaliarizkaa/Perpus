@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Artikel;
+use App\Models\Berita;
 use App\Models\Buku;
 use App\Models\KaryaBuku;
 use App\Models\KaryaTI;
@@ -15,14 +15,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $artikel = Artikel::count();
+        $berita = Berita::count();
         $buku = Buku::count();
-        $views = Artikel::sum('views');
-        $karyabuku = KaryaBuku::count();
-        $karyailmiah = KaryaTI::count();
-        $karyapub = KaryaTP::count();
-        $klipping = Klipping::count();
-        $counter = Counter::sum('counts');
-        return view('admin/index', compact('buku', 'artikel', 'views', 'karyabuku', 'karyailmiah', 'karyapub', 'klipping', 'counter'));
+        $views = Berita::sum('views');
+        return view('admin/index', compact('buku', 'berita', 'views'));
     }
 }

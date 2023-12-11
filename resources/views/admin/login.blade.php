@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="{{ url('css/login.css?v=') . time() }}">
 
     <!-- Logo Title -->
-    <link rel="icon" href="{{ URL::asset('images/1.png') }}" type="image/x-icon">
     <title>Login Perpus</title>
 </head>
 
@@ -33,10 +32,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap login py-5">
-                        <div class="img d-flex align-items-center justify-content-center"
-                            style="background-image: url(images/1.png);"></div>
+                        <div class="img d-flex align-items-center justify-content-center"></div>
                         <h3 class="text-center mb-3">Login Admin</h3>
-                        <p class="text-center">Portal Berita Perpustakaan MAN 1 Yogyakarta</p>
+                        <p class="text-center">Perpustakaan Sekolah</p>
                         <form action="/login" method="post" class="login-form">
 
                             @csrf

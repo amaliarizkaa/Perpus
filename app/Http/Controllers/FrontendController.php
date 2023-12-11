@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Constants\GlobalConstants;
 use Illuminate\Http\Request;
 use App\Models\Buku;
-use App\Models\Artikel;
+use App\Models\Berita;
 use App\Models\Banner;
 use App\Models\Kategori;
 use App\Models\KaryaBuku;
@@ -13,6 +13,7 @@ use App\Models\KaryaTI;
 use App\Models\KaryaTP;
 use App\Models\KategoriPenulis;
 use App\Models\Klipping;
+use App\Models\Profil;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Pagination\Paginator;
@@ -22,33 +23,26 @@ class FrontendController extends Controller
     public function index()
     {
         Paginator::useBootstrap();
-        $artikel = Artikel::latest()->paginate(6);
-        // $popular_posts = Artikel::popularWeek()->get();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
-        $kategori = Kategori::all();
+        $berita = Berita::latest()->paginate(6);
+        // $popular_posts = berita::popularWeek()->get();
+        $post_newest = Berita::orderBy('created_at', 'desc')->limit('5')->get();
         $data = array(
             "tittle" => "Beranda",
-            "tittle" => "Katalog Perpustakaan",
+            "tittle" => "Katalog Buku",
         );
-        return view('/client/index', compact('artikel', 'kategori', 'data', 'post_populer'));
+        return view('/client/index', compact('berita', 'data', 'post_newest'));
     }
 
-    public function artikel_kategori($slug)
+    public function detail_berita(Request $request, $slug)
     {
-        $kategori = Kategori::where('slug', $slug)->first();
-        return view('/client/artikel-kategori', compact('kategori'));
-    }
-
-    public function detail_artikel(Request $request, $slug)
-    {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
-        $blogKey = 'blog_' . $artikel->id;
-        if (!Session::has($blogKey)) {
-            $artikel->increment('views');
-            Session::put($blogKey, 1);
-        }
-        return view('/client/detailartikel', compact('artikel', 'post_populer'));
+        $berita = Berita::where('slug', $slug)->first();
+        $post_newest = Berita::orderBy('created_at', 'desc')->limit('5')->get();
+        // $blogKey = 'blog_' . $berita->id;
+        // if (!Session::has($blogKey)) {
+        //     $berita->increment('views');
+        //     Session::put($blogKey, 1);
+        // }
+        return view('/client/detailberita', compact('berita', 'post_newest'));
     }
 
     public function katalog(Request $request)
@@ -77,187 +71,64 @@ class FrontendController extends Controller
     }
 
 
+    // public function profil(Request $slug)
+    // {
+    //     $berita = berita::where('slug', $slug)->first();
+    //     $post_populer = berita::orderBy('views', 'desc')->limit('5')->get();
+
+    //     return view('/client/profil/profil', compact('berita', 'post_populer'));
+    //     return view('/client/profil/visimisi', compact('berita', 'post_populer'));
+    // }
     public function profil(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
-
-        return view('/client/profil/profil', compact('artikel', 'post_populer'));
-        return view('/client/profil/visimisi', compact('artikel', 'post_populer'));
+        $profil = Profil::all();
+        return view('/client/profil/profil', compact('profil'));
     }
     public function visimisi(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
+        $berita = berita::where('slug', $slug)->first();
+        $post_populer = berita::orderBy('views', 'desc')->limit('5')->get();
 
-        return view('/client/profil/visimisi', compact('artikel', 'post_populer'));
+        return view('/client/profil/visimisi', compact('berita', 'post_populer'));
     }
 
     public function prestasi(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
+        $berita = Berita::where('slug', $slug)->first();
+        $post_populer = Berita::orderBy('views', 'desc')->limit('5')->get();
 
-        return view('/client/profil/prestasi', compact('artikel', 'post_populer'));
+        return view('/client/profil/prestasi', compact('berita', 'post_populer'));
     }
 
     public function layanan(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
+        $berita = Berita::where('slug', $slug)->first();
+        $post_populer = Berita::orderBy('views', 'desc')->limit('5')->get();
 
-        return view('/client/profil/layanan', compact('artikel', 'post_populer'));
+        return view('/client/profil/layanan', compact('berita', 'post_populer'));
     }
 
     public function fasilitas(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
+        $berita = Berita::where('slug', $slug)->first();
+        $post_populer = Berita::orderBy('views', 'desc')->limit('5')->get();
 
-        return view('/client/profil/fasilitas', compact('artikel', 'post_populer'));
+        return view('/client/profil/fasilitas', compact('berita', 'post_populer'));
     }
 
     public function promosi(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
+        $berita = Berita::where('slug', $slug)->first();
+        $post_populer = Berita::orderBy('views', 'desc')->limit('5')->get();
 
-        return view('/client/profil/promosi', compact('artikel', 'post_populer'));
+        return view('/client/profil/promosi', compact('berita', 'post_populer'));
     }
 
     public function tatatertib(Request $slug)
     {
-        $artikel = Artikel::where('slug', $slug)->first();
-        $post_populer = Artikel::orderBy('views', 'desc')->limit('5')->get();
+        $berita = Berita::where('slug', $slug)->first();
+        $post_populer = Berita::orderBy('views', 'desc')->limit('5')->get();
 
-        return view('/client/profil/tatatertib', compact('artikel', 'post_populer'));
-    }
-
-    // public function karyabuku(Request $request)
-    // {
-
-    //     $search = $request['search'] ?? "";
-    //     if ($search != "") {
-    //         //where
-    //         $karyabuku = KaryaBuku::where('judul', 'LIKE', "%$search%")->latest()->paginate(15);
-    //     } elseif ($request->row) {
-    //         $karyabuku = KategoriPenulis::where('nama_kategori', $request->row)->firstOrFail()->karyabuku()->paginate(15);
-    //     } else {
-    //         $katbuk = KategoriPenulis::all();
-    //         $karyabuku = KaryaBuku::all();
-    //         return view('/client/karya/karya-buku', compact('karyabuku', 'search', 'katbuk'))->with('message', 'Karya yang dicari tidak ditemukan!');
-    //     }
-
-    //     $data = compact('karyabuku', 'search');
-    // $buku = Buku::all();
-    // $novel = Buku::where('kategori_id', 1)->first();
-    //     return view('/client/karya/karya-buku')->with($data);
-    // elseif ($request->kategori) {
-    //$karyabuku = KategoriPenulis::where('nama_kategori', $request->kategori)->firstOrFail()->karyabuku()->paginate(10);
-    // }
-
-    public function karyabuku(Request $request)
-    {
-        Paginator::useBootstrap();
-        $karyabuku = KaryaBuku::latest()->paginate(15);
-        return view('/client/karya/karya-buku', compact('karyabuku'));
-    }
-
-    public function search_buku(Request $request)
-    {
-        if ($request->search) {
-            $karyabuku = KaryaBuku::where('judul', 'like', '%' . $request->search . '%')
-                ->orWhere('penulis', 'like', '%' . $request->search . '%')->latest()->paginate(15);
-        } else {
-            $karyabuku = KaryaBuku::latest()
-                ->paginate(15);
-        }
-        return view('/client/karya/karya-buku', compact('karyabuku'));
-    }
-
-    // public function viewkategori($slug)
-    // {
-    //     if (KategoriPenulis::where('slug', $slug)->exists()) {
-    //         $kategori = KategoriPenulis::where('slug', $slug)->first();
-    //         $karyabuku = KaryaBuku::where('kategori_id', $kategori->id)->get();
-    //         return view('client/karya/karya-buku/view-kategori', compact('kategori', 'karyabuku'));
-    //     } else {
-    //         return redirect()->back()->with('status', 'slug tidak ada');
-    //     }
-    // }
-
-    public function detail_karya_buku($slug)
-    {
-        $karyabuku = KaryaBuku::where('slug', $slug)->first();
-        return view('/client/karya/detail-buku', compact('karyabuku'));
-    }
-
-    public function karyailmiah(Request $request)
-    {
-        Paginator::useBootstrap();
-        $karyailmiah = KaryaTI::latest()->paginate(15);
-        return view('/client/karya/karya-ilmiah', compact('karyailmiah'));
-    }
-
-    public function search_ilmiah(Request $request)
-    {
-        if ($request->search) {
-            $karyailmiah = KaryaTI::where('judul', 'like', '%' . $request->search . '%')
-                ->orWhere('penulis', 'like', '%' . $request->search . '%')->latest()->paginate(15);
-        } else {
-            $karyailmiah = KaryaTI::latest()
-                ->paginate(15);
-        }
-        return view('/client/karya/karya-ilmiah', compact('karyailmiah'));
-    }
-
-    public function detail_karya_ilmiah($slug)
-    {
-        $karyailmiah = KaryaTI::where('slug', $slug)->first();
-        return view('/client/karya/detail-ilmiah', compact('karyailmiah'));
-    }
-
-    public function karyapublikasi()
-    {
-        Paginator::useBootstrap();
-        $karyailmiah = KaryaTP::latest()->paginate(15);
-        return view('/client/karya/karya-publikasi', compact('karyailmiah'));
-    }
-
-    public function search_publikasi(Request $request)
-    {
-        if ($request->search) {
-            $karyapub = KaryaTP::where('judul', 'like', '%' . $request->search . '%')
-                ->orWhere('penulis', 'like', '%' . $request->search . '%')->latest()->paginate(15);
-        } else {
-            $karyapub = KaryaTP::latest()
-                ->paginate(15);
-        }
-        return view('/client/karya/karya-publikasi', compact('karyapub'));
-    }
-
-    public function detail_karya_publikasi($slug)
-    {
-        $karyapub = KaryaTP::where('slug', $slug)->first();
-        return view('/client/karya/detail-publikasi', compact('karyapub'));
-    }
-
-    public function kliping()
-    {
-        Paginator::useBootstrap();
-        $klipping = Klipping::latest()->paginate(15);
-        return view('/client/kliping/kliping', compact('klipping'));
-    }
-
-    public function search_klipping(Request $request)
-    {
-        if ($request->search) {
-            $klipping = Klipping::where('tahun', 'like', '%' . $request->search . '%')
-                ->latest()->paginate(15);
-        } else {
-            $klipping = Klipping::latest()
-                ->paginate(15);
-        }
-        return view('/client/kliping/kliping', compact('klipping'));
+        return view('/client/profil/tatatertib', compact('berita', 'post_populer'));
     }
 }

@@ -11,9 +11,9 @@
             </div>
         @endif
         {{-- Button Tambah Admin --}}
-        <div class="container btn-container mt-3">
-            <a type="button" href="/register-undo" class="btn btn-primary">
-                Tambah Admin
+        <div class="btn-tambah mx-4 flex text-center">
+            <a type="button" href="/register-undo" class="btn-link py-2">
+                Tambah
             </a>
         </div>
         {{-- Button Tambah Admin End --}}
@@ -80,8 +80,7 @@
                                 </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn-tambah mx-4 flex text-center">Simpan</button>
                         </div>
                         </form>
                     </div>

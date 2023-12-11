@@ -5,15 +5,28 @@
         <br> <br> <br>
         <a href="/" class="buttonback"> <img class="back-katalog mt-2 "
                 src="{{ URL::asset('images/previous.png') }}"alt=""> </a>
-        <div class="row mx-0">
-            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+        <div class="row">
+
+            @foreach ($profil as $item)
+                <div class="my-2">
+                    <div class="title-profil col-md-12 fs-1 fw-bold text-center">
+                        {{ $item->title }}
+                    </div>
+                    <hr>
+                    <div class="col-md-12 text-center">
+                        {{ $item->description }}
+                    </div>
+                </div>
+            @endforeach
+
+            {{-- <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
                 <div>
                     <div class="head-news pt-2 pb-1">Profil Perpustakaan</div>
-                </div>
+                </div> --}}
 
-                {{-- judul --}}
+            {{-- judul --}}
 
-                <div class="content">
+            {{-- <div class="content">
 
                     <h1 class="text-judul-profil mt-4 lh-md">Sejarah</h1>
                     <div class="fh5co_hover_news_img">
@@ -93,7 +106,7 @@
 
 
 
-                    <h1 class="text-judul-profil mt-4 lh-md">Tugas dan Fungsi <br>Perpustakaan MAN 1 Yogyakarta</h1>
+                    <h1 class="text-judul-profil mt-4 lh-md">Tugas dan Fungsi <br>Perpustakaan Sekolah</h1>
                     <div class="fh5co_hover_news_img">
                         <div class="fh5co_news_img  mb-3"></div>
                         <div></div>
@@ -112,12 +125,12 @@
                                 imajinasi.</li>
                         </dl>
                     </div>
-                </div>
-            </div>
+                </div> --}}
+        </div>
 
-            {{-- kanan --}}
+        {{-- kanan --}}
 
-            <div class="col-md-3 animate-box ">
+        {{-- <div class="col-md-3 animate-box ">
                 <div>
                     <div class="head-side mt-3 pb-1 fw-semibold ">Artikel Populer</div>
                 </div>
@@ -138,14 +151,14 @@
                         </div>
                     @endforeach
                 @endif
-            </div>
-        </div>
+            </div> --}}
+    </div>
     </div>
 
     @yield('footer')
 
     <!-- Bootstrap core JavaScript
-                                                                                                                                                                                                                                                                                                                        ================================================== -->
+                                                                                                                                                                                                                                                                                                                                                                                                                ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

@@ -6,7 +6,7 @@
     --red: #dc3545;
     --orange: #fd7e14;
     --yellow: #ffc107;
-    --green: #2a6f3b;
+    --green: #680079;
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
@@ -14,7 +14,7 @@
     --gray-dark: #343a40;
     --primary: #007bff;
     --secondary: #6c757d;
-    --success: #2a6f3b;
+    --success: #680079;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
@@ -2270,7 +2270,7 @@ textarea.form-control {
     width: 100%;
     margin-top: 0.25rem;
     font-size: 80%;
-    color: #2a6f3b;
+    color: #680079;
 }
 
 .valid-tooltip {

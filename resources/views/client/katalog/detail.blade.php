@@ -17,9 +17,9 @@
                         <h1 class="judulbuku">{{ $buku->judul }}</h1>
                         <h1 class="kecil">{{ $buku->pengarang }} - {{ $buku->tahun }}</h1>
                         <h1 class="penerbit ">Penerbit : {{ $buku->penerbit }}</h1>
-                        <h6 class="align-text-top  py-1 ">
+                        {{-- <h6 class="align-text-top  py-1 ">
                             {{ $buku->kategori_buku->nama_kategori }} / {{ $buku->subjek }}
-                        </h6>
+                        </h6> --}}
                         <p class="border-left border-primary">
                         <p>{{ strip_tags(preg_replace('/&#?[a-z0-9]{2,8};/i', '', $buku->deskripsi)) }}</p>
                         </p>

@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+}
+
 /* navbar */
 
 @media (max-width: 700px) {
@@ -12,7 +21,7 @@
         white-space: pre-line;
     }
 
-    .logoman {
+    .logo {
         margin-top: -15px;
         margin-left: -35px;
         object-position: center;
@@ -52,7 +61,7 @@
     height: 70px;
     width: 100%;
     padding: 20px 30px;
-    background-color: #2a6f3b;
+    background-color: #680079;
     position: relative;
 }
 .navbar .nav-header {
@@ -102,7 +111,7 @@
     }
     .navbar .nav-btn label:hover,
     .navbar #nav-check:checked ~ .nav-btn label {
-        background-color: #47c363;
+        background-color: #ED7CFF;
     }
     .navbar .nav-links {
         font-size: 90%;
@@ -110,7 +119,7 @@
         display: block;
         text-align: left;
         width: 50%;
-        background-color: #47c363;
+        background-color: #ED7CFF;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 70px;
@@ -155,7 +164,7 @@
     /* font-size: 180%; */
     font-size: 18px;
     font-weight: bold;
-    color: green;
+    color: #680079;
     letter-spacing: 0px;
     line-height: 25px;
 }
@@ -188,12 +197,12 @@ ion-icon {
     padding-left: 8px;
 }
 .time-news:hover {
-    color: green;
+    color: #680079;
 }
 
 .head-news {
     font-size: 180%;
-    color: green;
+    color: #680079;
     border-bottom: 5px solid #ffcc01;
     padding-right: 30px;
 }
@@ -201,7 +210,7 @@ ion-icon {
 .head-side {
     font-weight: bold;
     padding-top: 50px;
-    color: green;
+    color: #680079;
     border-bottom: 5px solid #ffcc01;
     padding-right: 30px;
     border-width: 5px;
@@ -255,7 +264,7 @@ ion-icon {
 }
 
 .link-side:hover {
-    color: green;
+    color: #680079;
 }
 
 /* Profil */
@@ -290,7 +299,7 @@ ul.none-dot {
     border-radius: 5px;
     padding: 3px;
     text-decoration: none;
-    color: green;
+    color: #680079;
 }
 .kubuku:hover {
     color: #ffcc01;
@@ -312,4 +321,8 @@ ul.none-dot {
 
 .footer-box {
     padding-top: -850px;
+}
+
+.title-profil {
+    color: #ffcc01;
 }

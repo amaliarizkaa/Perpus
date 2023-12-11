@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Buku;
-use App\Models\KategoriBuku;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
@@ -14,8 +13,7 @@ class BukuController extends Controller
     public function index()
     {
         $buku = Buku::all();
-        $katbuk = KategoriBuku::all();
-        return view('/admin/buku/index', compact('buku', 'katbuk'));
+        return view('/admin/buku/index', compact('buku'));
     }
 
     public function store(Request $request)
@@ -27,7 +25,6 @@ class BukuController extends Controller
             'penerbit' => 'required|max:150',
             'tahun' => 'required',
             'jumlah' => 'nullable',
-            'kategori_id' => 'nullable',
             'subjek' => 'nullable',
             'deskripsi' => 'required|max:3000',
             'gambar_buku' => 'required',
@@ -59,7 +56,6 @@ class BukuController extends Controller
                 'jumlah' => $request->jumlah,
                 'deskripsi' => $request->deskripsi,
                 'slug' => Str::slug($request->judul),
-                'kategori_id' => $request->kategori_id,
                 'subjek' => $request->subjek,
                 'is_active' => $request->is_active,
             ]);
@@ -76,7 +72,7 @@ class BukuController extends Controller
                 'jumlah' => $request->jumlah,
                 'deskripsi' => $request->deskripsi,
                 'slug' => Str::slug($request->judul),
-                'kategori_id' => $request->kategori_id,
+                // 'kategori_id' => $request->kategori_id,
                 'subjek' => $request->subjek,
                 'is_active' => $request->is_active,
                 'gambar_buku' => $request->file('gambar_buku')->store('buku')

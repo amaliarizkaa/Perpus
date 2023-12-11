@@ -23,9 +23,9 @@ return new class extends Migration
             $table->string('tahun');
             $table->integer('jumlah');
             $table->text('deskripsi');
-            $table->integer('kategori_id');
+            // $table->integer('kategori_id');
             $table->string('subjek');
-            $table->integer('user_id');
+            $table->bigInteger('user_id')->unsigned();
             $table->string('gambar_buku');
             $table->integer('views');
             $table->timestamps();

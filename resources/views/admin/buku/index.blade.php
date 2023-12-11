@@ -3,7 +3,7 @@
     <section class="home-section">
         <div class="home-content">
 
-            <span class="text">Kelola Koleksi</span>
+            <span class="text">Kelola Katalog</span>
         </div>
         @if (session('flash_message_success'))
             <div class="alert alert-success">
@@ -11,9 +11,9 @@
             </div>
         @endif
         {{-- Button Tambah Artikel --}}
-        <div class="container btn-container mt-3">
-            <a type="button" href="#" data-bs-toggle="modal" data-bs-target="#tambahModal" class="btn btn-primary">
-                Tambah koleksi
+        <div class="btn-tambah mx-4 flex text-center">
+            <a type="button" href="#" data-bs-toggle="modal" data-bs-target="#tambahModal" class="btn-link py-2">
+                Tambah
             </a>
         </div>
         {{-- Button Tambah Artikel End --}}
@@ -31,7 +31,7 @@
                         <th>Penerbit</th>
                         <th>Tahun Terbit</th>
                         <th>Jumlah Tersedia</th>
-                        <th>Jenis Koleksi</th>
+                        {{-- <th>Jenis Koleksi</th> --}}
                         <th>Subjek Koleksi</th>
                         <th>Pengupload</th>
                         <th>Gambar</th>
@@ -51,7 +51,7 @@
                             <td>{{ $item->penerbit }}</td>
                             <td>{{ $item->tahun }}</td>
                             <td>{{ $item->jumlah ?? '0' }}</td>
-                            <td>{{ $item->kategori_buku->nama_kategori }}</td>
+                            {{-- <td>{{ $item->kategori_buku->nama_kategori }}</td> --}}
                             <td>{{ $item->subjek }}</td>
                             <td>{{ $item->users->name }}</td>
                             <td><img src="{{ URL::asset('uploads/' . $item->gambar_buku) }}" width="100"></td>
@@ -75,7 +75,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="tambahModalLabel">Tambah Koleksi</h5>
+                        <h5 class="modal-title" id="tambahModalLabel">Form Input Buku</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -122,7 +122,7 @@
                                 <textarea name="deskripsi" id="froala" class="form-control @error('deskripsi') is-invalid @enderror" autofocus
                                     required width="100"></textarea>
                             </div>
-                            <div class="mb-3">
+                            {{-- <div class="mb-3">
                                 <label for="kategori_id" class="form-label">Jenis Koleksi</label>
                                 <select name="kategori_id"
                                     class="form-control @error('kategori_id') is-invalid @enderror">
@@ -130,7 +130,7 @@
                                         <option value="{{ $row->id }}">{{ $row->nama_kategori }}</option>
                                     @endforeach
                                 </select>
-                            </div>
+                            </div> --}}
                             <div class="mb-3">
                                 <label for="subjek" class="form-label">Subjek Koleksi</label>
                                 <input type="text" name="subjek" id="judul"
@@ -153,8 +153,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn-tambah mx-4 flex text-center">Simpan</button>
                     </div>
                     </form>
                 </div>
@@ -217,7 +216,7 @@
                                     <label for="deskripsi" class="form-label">Deskripsi</label>
                                     <textarea id="froala" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" autofocus>{{ $data->deskripsi }}</textarea>
                                 </div>
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label for="kategori" class="form-label">Jenis Koleksi</label>
                                     <select value="{{ $data->kategori }}" name="kategori_id"
                                         class="form-control @error('kategori_id') is-invalid @enderror">
@@ -230,7 +229,7 @@
                                             @endif
                                         @endforeach
                                     </select>
-                                </div>
+                                </div> --}}
                                 <div class="mb-3">
                                     <label for="subjek" class="form-label">Subjek Koleksi</label>
                                     <input type="text" name="subjek" id="subjek"
@@ -258,8 +257,7 @@
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn-tambah mx-4 flex text-center">Simpan</button>
                         </div>
                         </form>
                     </div>

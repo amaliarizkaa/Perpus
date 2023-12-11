@@ -5,7 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\KategoriArtController;
 use App\Http\Controllers\BannerController;
@@ -16,6 +16,7 @@ use App\Http\Controllers\KaryaTIController;
 use App\Http\Controllers\KaryaTPController;
 use App\Http\Controllers\KlippingController;
 use App\Http\Controllers\GenreController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,10 +52,10 @@ Route::get('/admin/delete/{id}', [AdminController::class, 'delete'])->middleware
 Route::match(['get', 'post'], '/admin/edit/{id}', [AdminController::class, 'edit'])->middleware('auth');
 
 // Artikel Route
-Route::get('/artikel', [ArtikelController::class, 'index'])->name('artikel')->middleware('auth')->middleware('auth');
-Route::post('/artikel/store', [ArtikelController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/artikel/edit/{id}', [ArtikelController::class, 'edit'])->middleware('auth');
-Route::get('/artikel/delete/{id}', [ArtikelController::class, 'delete'])->middleware('auth');
+Route::get('/berita', [BeritaController::class, 'index'])->name('berita')->middleware('auth')->middleware('auth');
+Route::post('/berita/store', [BeritaController::class, 'store'])->name('store')->middleware('auth');
+Route::put('/berita/edit/{id}', [BeritaController::class, 'edit'])->middleware('auth');
+Route::get('/berita/delete/{id}', [BeritaController::class, 'delete'])->middleware('auth');
 
 // Artikel Kategori Route
 Route::get('/kategoriart', [KategoriArtController::class, 'index'])->name('index')->middleware('auth');
@@ -110,15 +111,20 @@ Route::get('/admin/klipping', [KlippingController::class, 'index'])->name('index
 Route::post('/admin/klipping/store', [KlippingController::class, 'store'])->name('store')->middleware('auth');
 Route::put('/admin/klipping/edit/{id}', [KlippingController::class, 'edit'])->middleware('auth');
 Route::get('/admin/klipping/delete/{id}', [KlippingController::class, 'delete'])->middleware('auth');
+// Profil
+Route::get('/admin/profil', [ProfilController::class, 'index'])->name('index')->middleware('auth');
+Route::post('/admin/profil/store', [ProfilController::class, 'store'])->name('store')->middleware('auth');
+Route::put('/admin/profil/edit/{id}', [ProfilController::class, 'edit'])->middleware('auth');
+Route::get('/admin/profil/delete/{id}', [ProfilController::class, 'delete'])->middleware('auth');
 
 // Client Site Route
 // Portal Berita Route
 // Route::group(['prefix' => '', 'middleware' => ['counter']], function () {
 // });
 
-Route::get('/', [FrontendController::class, 'index'])->name('index')->middleware('counter');
-Route::get('/artikel/{slug}', [FrontendController::class, 'detail_artikel'])->name('detail_artikel');
-Route::get('/kategori/{slug}', [FrontendController::class, 'artikel_kategori'])->name('artikel_kategori');
+Route::get('/', [FrontendController::class, 'index'])->name('index');
+Route::get('/berita/{slug}', [FrontendController::class, 'detail_berita'])->name('detail_berita');
+Route::get('/kategori/{slug}', [FrontendController::class, 'berita_kategori'])->name('berita_kategori');
 
 // Katalog Buku Route
 Route::get('/katalog', [FrontendController::class, 'katalog'])->name('katalog');
