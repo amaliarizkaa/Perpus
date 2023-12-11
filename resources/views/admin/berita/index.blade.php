@@ -12,7 +12,8 @@
         @endif
 
         <div class="btn-tambah mx-4 flex text-center">
-            <a type="button" class="btn-link py-2" data-bs-toggle="modal" data-bs-target="#tambahModal" href="#">
+            <a type="button" class="btn-link py-2" data-bs-toggle="modal" data-bs-target="#tambahModal" href="#"
+                data-bs-backdrop="static" data-bs-keyboard="false">
                 Tambah
             </a>
         </div>
@@ -58,8 +59,8 @@
         {{-- Table End --}}
 
         <!-- Modal Tambah -->
-        <div class="modal fade w-100" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true"
-            tabindex="-1">
+        <div class="modal fade w-100" id="tambahModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="tambahModalLabel" aria-hidden="true" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -98,8 +99,8 @@
 
         <!-- Modal Edit -->
         @foreach ($berita as $data)
-            <div class="modal fade" id="editModal-{{ $data->berita_id }}" tabindex="-1" aria-labelledby="editModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="editModal-{{ $data->berita_id }}" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -142,12 +143,12 @@
 
         {{-- Dismiss Modal --}}
 
-        <div class="modal fade" id="alertModal" aria-hidden="true" aria-labelledby="tambahModalLabel" tabindex="-1">
+        <div class="modal fade" id="alertModal" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true"
+            aria-labelledby="tambahModalLabel" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="tambahModalLabel">Form Input Berita</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         Yakin ingin membatalkan proses input form berita?

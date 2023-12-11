@@ -52,7 +52,8 @@
         </div>
         {{-- Table End --}}
         <!-- Modal Tambah -->
-        <div class="modal fade w-100" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+        <div class="modal fade w-100" id="tambahModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="tambahModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -84,8 +85,8 @@
         </div>
         <!-- Modal Edit -->
         @foreach ($profil as $data)
-            <div class="modal fade" id="editModal-{{ $data->id }}" tabindex="-1" aria-labelledby="editModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="editModal-{{ $data->id }}" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -118,12 +119,12 @@
         @endforeach
         {{-- Dismiss Modal --}}
 
-        <div class="modal fade" id="alertModal" aria-hidden="true" aria-labelledby="tambahModalLabel" tabindex="-1">
+        <div class="modal fade" id="alertModal" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"
+            aria-labelledby="tambahModalLabel" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="tambahModalLabel">Form Input Profil</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         Yakin ingin membatalkan proses input form profil?
