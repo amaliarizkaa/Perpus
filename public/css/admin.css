@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+.modal-backdrop {
+    display: none;
+    z-index: 1040 !important;
+}
 .sidebar {
     position: fixed;
     top: 0;
@@ -62,7 +67,7 @@
     transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover {
-    background: #FFCB14;
+    background: #ffcb14;
     border-radius: 5px;
     padding-left: 5px;
 }
@@ -352,7 +357,7 @@ h2 {
     width: 100%;
     height: 313px;
     border-radius: 10px;
-    background: linear-gradient(160deg, var(--sc-color), #ED7CFF);
+    background: linear-gradient(160deg, var(--sc-color), #ed7cff);
     padding: 40px;
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in;
@@ -426,11 +431,11 @@ a:link {
 
 .btn-tambah {
     width: 180px;
-    background-color: #FFCB14;
+    background-color: #ffcb14;
     border-radius: 0.3rem;
     color: #fff;
     text-decoration: none !important;
-    border-color: #FFCB14;
+    border-color: #ffcb14;
 }
 
 .btn-tambah a:hover {

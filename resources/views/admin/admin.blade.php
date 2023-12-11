@@ -11,9 +11,9 @@
             </div>
         @endif
         {{-- Button Tambah Admin --}}
-        <div class="btn-tambah mx-4 flex text-center">
-            <a type="button" href="/register-undo" class="btn-link py-2">
-                Tambah
+        <div class="container btn-container mt-3">
+            <a type="button" href="/register-undo" class="btn btn-warning">
+                Tambah Admin
             </a>
         </div>
         {{-- Button Tambah Admin End --}}
@@ -39,10 +39,10 @@
                             <td>{{ $item->email }}</td>
                             <td>{{ date('d M Y', strtotime($item->created_at)) }}</td>
                             <td>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $item->id }}"
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-{{ $item->user_id }}"
                                     class="btn btn-warning btn-xs"><i class="bx bx-edit"></i></a>
-                                <a rel="{{ $item->id }}" href="#"id="deleteAdmin"
-                                    class="btn btn-danger btn-xs delete" data-id="{{ $item->id }}"><i
+                                <a rel="{{ $item->user_id }}" href="#"id="deleteAdmin"
+                                    class="btn btn-danger btn-xs delete" data-id="{{ $item->user_id }}"><i
                                         class="bx bx-trash"></i></a>
                             </td>
                         </tr>
@@ -55,8 +55,8 @@
 
         @foreach ($admin as $data)
             <!-- Modal Edit -->
-            <div class="modal fade" id="exampleModal-{{ $data->id }}" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="exampleModal-{{ $data->user_id }}" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -64,7 +64,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form action="{{ url('/admin/edit/' . $data->id) }}" method="post">
+                            <form action="{{ url('/admin/edit/' . $data->user_id) }}" method="post">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nama Lengkap</label>
@@ -80,7 +80,8 @@
                                 </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn-tambah mx-4 flex text-center">Simpan</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                         </form>
                     </div>

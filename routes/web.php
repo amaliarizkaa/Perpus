@@ -57,12 +57,7 @@ Route::post('/berita/store', [BeritaController::class, 'store'])->name('store')-
 Route::put('/berita/edit/{id}', [BeritaController::class, 'edit'])->middleware('auth');
 Route::get('/berita/delete/{id}', [BeritaController::class, 'delete'])->middleware('auth');
 
-// Artikel Kategori Route
-Route::get('/kategoriart', [KategoriArtController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/kategoriart/store', [KategoriArtController::class, 'store'])->name('store')->middleware('auth');
-// Route::match(['get', 'post'], '/kategoriart/edit/{id}', [KategoriArtController::class, 'edit']);
-Route::put('/kategoriart/edit/{id}', [KategoriArtController::class, 'edit'])->middleware('auth');
-Route::get('/kategoriart/delete/{id}', [KategoriArtController::class, 'delete'])->middleware('auth');
+
 
 // Buku Route
 Route::get('/buku', [BukuController::class, 'index'])->name('buku')->middleware('auth');
@@ -70,17 +65,6 @@ Route::post('/buku/store', [BukuController::class, 'store'])->name('store')->mid
 Route::put('/buku/edit/{id}', [BukuController::class, 'edit'])->middleware('auth');
 Route::get('/buku/delete/{id}', [BukuController::class, 'delete'])->middleware('auth');
 
-// Kategori Buku Route
-Route::get('/buku/kategoribuk', [KategoriBukuController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/buku/kategoribuk/store', [KategoriBukuController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/buku/kategoribuk/edit/{id}', [KategoriBukuController::class, 'edit'])->middleware('auth');
-Route::get('/buku/kategoribuk/delete/{id}', [KategoriBukuController::class, 'delete'])->middleware('auth');
-
-// Genre Buku Route
-Route::get('/buku/genre', [GenreController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/buku/genre/store', [GenreController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/buku/genre/edit/{id}', [GenreController::class, 'edit'])->middleware('auth');
-Route::get('/buku/genre/delete/{id}', [GenreController::class, 'delete'])->middleware('auth');
 
 // Slide Banner Route
 // Route::get('/admin/daftar-banner', [BannerController::class, 'index'])->name('index')->middleware('auth');
@@ -88,29 +72,6 @@ Route::get('/buku/genre/delete/{id}', [GenreController::class, 'delete'])->middl
 // Route::put('/admin/daftar-banner/edit/{id}', [BannerController::class, 'edit'])->middleware('auth');
 // Route::get('/admin/daftar-banner/delete/{id}', [BannerController::class, 'delete'])->middleware('auth');
 
-// Karya Buku Route
-Route::get('/admin/karya-buku', [KaryaBukuController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/admin/karya-buku/store', [KaryaBukuController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/admin/karya-buku/edit/{id}', [KaryaBukuController::class, 'edit'])->middleware('auth');
-Route::get('/admin/karya-buku/delete/{id}', [KaryaBukuController::class, 'delete'])->middleware('auth');
-
-// Karya Ilmiah Route
-Route::get('/admin/karya-ilmiah', [KaryaTIController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/admin/karya-ilmiah/store', [KaryaTIController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/admin/karya-ilmiah/edit/{id}', [KaryaTIController::class, 'edit'])->middleware('auth');
-Route::get('/admin/karya-ilmiah/delete/{id}', [KaryaTIController::class, 'delete'])->middleware('auth');
-
-// Karya Terpublikasi
-Route::get('/admin/karya-publikasi', [KaryaTPController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/admin/karya-publikasi/store', [KaryaTPController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/admin/karya-publikasi/edit/{id}', [KaryaTPController::class, 'edit'])->middleware('auth');
-Route::get('/admin/karya-publikasi/delete/{id}', [KaryaTPController::class, 'delete'])->middleware('auth');
-
-// Klipping
-Route::get('/admin/klipping', [KlippingController::class, 'index'])->name('index')->middleware('auth');
-Route::post('/admin/klipping/store', [KlippingController::class, 'store'])->name('store')->middleware('auth');
-Route::put('/admin/klipping/edit/{id}', [KlippingController::class, 'edit'])->middleware('auth');
-Route::get('/admin/klipping/delete/{id}', [KlippingController::class, 'delete'])->middleware('auth');
 // Profil
 Route::get('/admin/profil', [ProfilController::class, 'index'])->name('index')->middleware('auth');
 Route::post('/admin/profil/store', [ProfilController::class, 'store'])->name('store')->middleware('auth');
@@ -141,20 +102,3 @@ Route::get('/layanan', [FrontendController::class, 'layanan'])->name('layanan');
 Route::get('/fasilitas', [FrontendController::class, 'fasilitas'])->name('fasilitas');
 Route::get('/promosi', [FrontendController::class, 'promosi'])->name('promosi');
 Route::get('/tatatertib', [FrontendController::class, 'tatatertib'])->name('tatatertib');
-
-
-//kliping
-Route::get('/kliping', [FrontendController::class, 'kliping'])->name('kliping');
-Route::get('/kliping/search', [FrontendController::class, 'search_klipping'])->name('search_klipping');
-
-
-//karya
-Route::get('/karya-buku', [FrontendController::class, 'karyabuku'])->name('karyabuku');
-Route::get('/karya-buku/search', [FrontendController::class, 'search_buku'])->name('search_buku');
-Route::get('/karya-buku/{slug}', [FrontendController::class, 'detail_karya_buku'])->name('detail_karya_buku');
-Route::get('/karya-ilmiah', [FrontendController::class, 'karyailmiah'])->name('karyailmiah');
-Route::get('/karya-ilmiah/search', [FrontendController::class, 'search_ilmiah'])->name('search_ilmiah');
-Route::get('/karya-ilmiah/{slug}', [FrontendController::class, 'detail_karya_ilmiah'])->name('detail_karya_ilmiah');
-Route::get('/karya-publikasi', [FrontendController::class, 'karyapublikasi'])->name('karyapublikasi');
-Route::get('/karya-publikasi/search', [FrontendController::class, 'search_publikasi'])->name('search_publikasi');
-Route::get('/karya-publikasi/{slug}', [FrontendController::class, 'detail_karya_publikasi'])->name('detail_karya_publikasi');

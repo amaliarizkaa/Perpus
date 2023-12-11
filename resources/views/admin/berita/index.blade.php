@@ -58,12 +58,14 @@
         {{-- Table End --}}
 
         <!-- Modal Tambah -->
-        <div class="modal fade w-100" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+        <div class="modal fade w-100" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true"
+            tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="text-center"class="modal-title" id="tambahModalLabel">Form Input Berita</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-target="#alertModal"
+                            data-bs-toggle="modal"></button>
                     </div>
                     <div class="modal-body">
                         <form action="/berita/store" method="post" enctype="multipart/form-data">
@@ -117,8 +119,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="body" class="form-label">Body</label>
-                                    <textarea id="froala" name="body" class="form-control @error('body') is-invalid @enderror"
-                                     autofocus>{{ $data->body }}</textarea>
+                                    <textarea id="froala" name="body" class="form-control @error('body') is-invalid @enderror" autofocus>{{ $data->body }}</textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="gambar_berita" class="form-label">Gambar Berita</label>
@@ -138,6 +139,28 @@
                 </div>
             </div>
         @endforeach
+
+        {{-- Dismiss Modal --}}
+
+        <div class="modal fade" id="alertModal" aria-hidden="true" aria-labelledby="tambahModalLabel" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="tambahModalLabel">Form Input Berita</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Yakin ingin membatalkan proses input form berita?
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" data-bs-dismiss="modal" data-bs-toggle="modal">Ya</button>
+
+                        <button class="btn btn-primary" data-bs-target="#tambahModal"
+                            data-bs-toggle="modal">Tidak</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         @push('script')
             {{-- SweetALert JS --}}
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>

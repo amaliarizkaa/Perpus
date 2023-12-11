@@ -21,13 +21,14 @@ class AdminController extends Controller
 
             // dd($data);
 
-            User::where(['id' => $id])->update(['name' => $data['name'], 'email' => $data['email']]);
+            User::where(['user_id' => $id])->update(['name' => $data['name'], 'email' => $data['email']]);
             return redirect()->back()->with('success', 'Admin Berhasil Diubah!');
         }
     }
+
     public function delete($id = null)
     {
-        User::where(['id' => $id])->delete();
+        User::where(['user_id' => $id])->delete();
         return redirect()->back()->with('flash_message_success', 'Data Admin berhasil Dihapus!');
     }
 }

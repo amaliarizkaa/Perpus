@@ -25,52 +25,63 @@
 </head>
 
 <body>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="login-wrap login py-5">
-                        <div class="img d-flex align-items-center justify-content-center"></div>
-                        <h3 class="text-center mb-3">Login Admin</h3>
-                        <p class="text-center">Perpustakaan Sekolah</p>
-                        <form action="/login" method="post" class="login-form">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col register-card">
+                <div class="row">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <img src="images/register.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col d-flex flex-column justify-content-center align-items-center form-card-container">
+                        <div class="row mb-4">
+                            <div class="col register-text">
+                                Login Admin
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-card">
+                                <form action="/login" method="post" class="login-form">
 
-                            @csrf
+                                    @csrf
 
-                            <div class="form-group">
-                                <div class="icon d-flex align-items-center justify-content-center"><span
-                                        class="fa fa-user"></span></div>
-                                <input type="email" id="email" name="email"
-                                    class="form-control @error('email') is-invalid @enderror" placeholder="Email"
-                                    required autofocus>
-                            </div>
-                            <div class="form-group">
-                                <div class="icon d-flex align-items-center justify-content-center"><span
-                                        class="fa fa-lock"></span></div>
-                                <input type="password" id="password" name="password"
-                                    class="form-control @error('password') is-invalid @enderror" placeholder="Password"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit"
-                                    class="mt-4 btn form-control btn-primary rounded submit px-3">LOGIN</button>
-                            </div>
-                        </form>
 
-                        @if (session()->has('loginError'))
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                {{ session('loginError') }}
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                </button>
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i
+                                                    class="fa fa-solid fa-envelope fa-sm"></i></span>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i
+                                                    class="fa fa-solid fa-lock fa-xl"></i></span>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-center align-items-center my-4">
+                                        <button type="submit"
+                                            class="btn form-control btn-warning rounded submit">LOGIN</button>
+                                    </div>
+                                </form>
+
+                                @if (session()->has('loginError'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        {{ session('loginError') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                            aria-label="Close">
+                                        </button>
+                                    </div>
+                                @endif
                             </div>
-                        @endif
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
